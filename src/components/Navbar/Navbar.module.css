@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Montserrat:700');
+.navbar {
+  display: flex;
+  width: 100vw;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+
+.heading {
+  display: flex;
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: #144d31;
+}
+
+.icon {
+  margin: 2.7rem 1rem 0 0;
+  color: #144d31c1;
+  scale: 1.2;
+}
