@@ -1,12 +1,21 @@
-.hamburgermenu {
+.rightsection {
+  display: flex;
   margin-left: 1.7rem;
-  width: 60px;
-  height: 50px;
+  gap: 0.5rem;
+}
+
+.search {
+  margin: 2.1rem 0.3rem 0 0;
+  color: #2f5b85;
+}
+
+.hamburgermenu {
+  margin-right: 1rem;
 }
 
 .icon3 {
-  width: 50px;
-  height: 10px;
+  width: 45px;
+  height: 9px;
   position: relative;
   margin: 10px auto;
   -webkit-transform: rotate(0deg);
@@ -29,7 +38,7 @@
 .icon3 span {
   display: block;
   position: absolute;
-  height: 7px;
+  height: 6px;
   width: 100%;
   background: #2f5b85;
   border-radius: 9px;
@@ -46,16 +55,16 @@
 }
 
 .icon3 span:nth-child(1) {
-  top: 0px;
+  top: 10px;
 }
 
 .icon3 span:nth-child(2),
 .icon3 span:nth-child(3) {
-  top: 14px;
+  top: 21px;
 }
 
 .icon3 span:nth-child(4) {
-  top: 30px;
+  top: 32px;
 }
 
 .open span:nth-child(1) {
@@ -82,4 +91,37 @@
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+.slidecard {
+  position: fixed;
+  height: 60%;
+  width: 75%;
+  top: 8.8%;
+  left: 25%;
+  z-index: 999;
+  overflow-x: hidden;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  border: none;
+  border-top-right-radius: 0;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    left: 60%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+.outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  /* background-color: rgba(0, 0, 0, 0.267); */
 }

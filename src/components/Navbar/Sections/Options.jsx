@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import classes from './Options.module.css';
+import HoverList from '../../UI/HoverList';
 
-const Options = () => {
+const Options = (props) => {
   const [category, setCategory] = useState(false);
 
   const toggleDownButton = () => {
@@ -14,13 +15,14 @@ const Options = () => {
       <div
         onMouseEnter={toggleDownButton}
         onMouseLeave={toggleDownButton}
+        onClick={toggleDownButton}
         className={classes.category}
       >
         <p>Categories</p>
         {category ? (
           <>
             <i className={`fa-solid fa-caret-up fa-lg ` + classes.caret}></i>
-            {/* <HoverList /> */}
+            <HoverList />
           </>
         ) : (
           <i className={`fa-solid fa-caret-down fa-lg ` + classes.caret}></i>

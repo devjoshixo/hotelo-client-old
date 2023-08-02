@@ -14,11 +14,11 @@
 .offer {
   position: absolute;
   top: 10%;
+  left: 5%;
   color: white;
   font-family: 'Montserrat';
   font-size: 3.5rem;
   width: 40%;
-  margin: 3rem 0 0 5rem;
   line-height: normal;
   user-select: none;
 }
@@ -52,7 +52,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   /* For mobile: */
   .displayImage img {
     object-fit: fill;
@@ -61,8 +61,8 @@
 
   .offer {
     font-size: 1rem;
-    top: 0%;
-    left: -18%;
+    top: 8%;
+    left: 4%;
     width: 50%;
   }
 

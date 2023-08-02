@@ -23,3 +23,11 @@
   margin-top: 1.7rem;
   right: 7%;
 }
+
+@media only screen and (max-width: 768px) {
+  .options {
+    flex-flow: column nowrap;
+    gap: 0;
+    margin-left: 1rem;
+  }
+}
