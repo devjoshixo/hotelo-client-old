@@ -1,0 +1,24 @@
+.hoverdiv {
+  position: absolute;
+  margin-top: 3rem;
+  right: 63%;
+  width: 14rem;
+  height: 15rem;
+  background-color: rgb(250, 250, 250);
+}
+
+.hoverdiv ul {
+  list-style: none;
+  margin: 1.3rem 0 0 -1rem;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgb(72, 72, 72);
+}
+
+.hoverdiv li:hover {
+  color: black;
+}
+
+.hoverdiv li:not(:last-child) {
+  margin-bottom: 10px;
+}
