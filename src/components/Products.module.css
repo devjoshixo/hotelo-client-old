@@ -17,4 +17,9 @@
   font-size: 3.5rem;
   width: 40%;
   margin: 5rem 0 0 5rem;
+  line-height: normal;
+}
+
+.notloaded {
+  display: none;
 }
