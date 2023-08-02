@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import HoverList from '../UI/HoverList';
 
 const Navbar = () => {
-  const [category, setCategory] = useState(true);
+  const [category, setCategory] = useState(false);
 
   const navigation = useHistory();
 
