@@ -34,11 +34,11 @@ const Navbar = () => {
           <p>Categories</p>
           {category ? (
             <>
-              <i className={`fa-solid fa-caret-up ` + classes.caret}></i>
+              <i className={`fa-solid fa-caret-up fa-lg ` + classes.caret}></i>
               <HoverList />
             </>
           ) : (
-            <i className={`fa-solid fa-caret-down ` + classes.caret}></i>
+            <i className={`fa-solid fa-caret-down fa-lg ` + classes.caret}></i>
           )}
         </div>
 
