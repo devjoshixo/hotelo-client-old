@@ -1,0 +1,25 @@
+.options {
+  display: flex;
+  gap: 3rem;
+  user-select: none;
+  font-weight: 600;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.options p:hover {
+  color: rgb(78, 78, 78);
+}
+
+.category {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.caret {
+  position: relative;
+  margin-top: 1.7rem;
+  right: 7%;
+}

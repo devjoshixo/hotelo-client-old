@@ -1,0 +1,20 @@
+.actionable {
+  display: flex;
+  gap: 3rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+.sidecontent {
+  display: flex;
+}
+
+.sidecontent:hover {
+  color: black;
+}
+
+.sidecontent i {
+  position: relative;
+  margin-top: 1.6rem;
+  right: 7%;
+}

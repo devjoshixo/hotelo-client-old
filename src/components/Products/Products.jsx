@@ -18,6 +18,7 @@ const Products = () => {
         />
         <h2 className={classes.offer}>Grab Upto 50% on selected Hotels</h2>
         <button className={classes.action}>Book Now</button>
+        <h1 className={classes.header}>Hotels for you!</h1>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 .displayImage {
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 20rem;
 }
 
@@ -16,13 +17,13 @@
   font-family: 'Montserrat';
   font-size: 3.5rem;
   width: 40%;
-  margin: 5rem 0 0 5rem;
+  margin: 3rem 0 0 5rem;
   line-height: normal;
 }
 
 .action {
   position: absolute;
-  top: 45%;
+  top: 73%;
   left: 5%;
   background-color: white;
   color: #182e43;
@@ -38,6 +39,35 @@
   background-color: #386997;
 }
 
+.header {
+  color: black;
+  margin-left: 5rem;
+  font-size: 2.2rem;
+}
+
 .notloaded {
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile: */
+  .displayImage img {
+    object-fit: fill;
+    height: 50%;
+  }
+
+  .offer {
+    font-size: 1rem;
+    top: 0%;
+    left: -18%;
+    width: 50%;
+  }
+
+  .action {
+    top: 30%;
+    left: 3%;
+    width: 5.2rem;
+    height: 1.5rem;
+    font-size: 13px;
+  }
 }

@@ -1,67 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from './Navbar.module.css';
-import { useHistory } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import HoverList from '../UI/HoverList';
+import LogoSection from './Sections/LogoSection';
+import Options from './Sections/Options';
+import SearchBar from './Sections/SearchBar';
+import Accounts from './Sections/Accounts';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
-  const [category, setCategory] = useState(false);
-
-  const navigation = useHistory();
-
-  const toggleDownButton = () => {
-    setCategory((prevState) => {
-      return !prevState;
-    });
-  };
-
-  const redirectHome = () => {
-    navigation.push('/');
-  };
-
+  const isMobile = useMediaQuery({ maxWidth: '500px' });
   return (
     <div className={classes.navbar}>
-      <div className={classes.heading} onClick={redirectHome}>
-        <i className={`fa-solid fa-hotel ` + classes.icon}></i>
-        <h1 className={classes.heading}>Hotelo</h1>
-      </div>
-
-      <div className={classes.options}>
-        <div
-          onMouseEnter={toggleDownButton}
-          onMouseLeave={toggleDownButton}
-          className={classes.category}
-        >
-          <p>Categories</p>
-          {category ? (
-            <>
-              <i className={`fa-solid fa-caret-up fa-lg ` + classes.caret}></i>
-              <HoverList />
-            </>
-          ) : (
-            <i className={`fa-solid fa-caret-down fa-lg ` + classes.caret}></i>
-          )}
-        </div>
-
-        <p>Deals</p>
-        <p>What's New</p>
-        <p>Booking</p>
-      </div>
-      <div className={classes.searchbar}>
-        <input type='text' placeholder='Search for Hotels' />
-        <i className='fa-solid fa-magnifying-glass'></i>
-      </div>
-
-      <div className={classes.actionable}>
-        <div className={classes.sidecontent}>
-          <i className='fa-regular fa-user fa-lg'></i>
-          <p>Account</p>
-        </div>
-
-        <div className={classes.sidecontent}>
-          <i className='fa-solid fa-location-dot fa-lg'></i>
-          <p>Attractions</p>
-        </div>
-      </div>
+      <LogoSection />
+      {isMobile ? (
+        ''
+      ) : (
+        <>
+          <Options />
+          <SearchBar />
+          <Accounts />
+        </>
+      )}
+      {isMobile ? <Hamburger /> : ''}
     </div>
   );
 };
