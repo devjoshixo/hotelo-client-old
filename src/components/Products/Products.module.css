@@ -20,6 +20,24 @@
   line-height: normal;
 }
 
+.action {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  background-color: white;
+  color: #182e43;
+  border: none;
+  border-radius: 20px;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+.action:hover {
+  color: white;
+  background-color: #386997;
+}
+
 .notloaded {
   display: none;
 }
