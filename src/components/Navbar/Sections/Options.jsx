@@ -5,7 +5,7 @@ import HoverList from '../../UI/HoverList';
 const Options = (props) => {
   const [category, setCategory] = useState(false);
 
-  const toggleDownButton = () => {
+  const toggleDownButton = (event) => {
     setCategory((prevState) => {
       return !prevState;
     });
@@ -13,8 +13,8 @@ const Options = (props) => {
   return (
     <div className={classes.options}>
       <div
-        onMouseEnter={toggleDownButton}
-        onMouseLeave={toggleDownButton}
+        // onMouseEnter={toggleDownButton}
+        // onMouseLeave={toggleDownButton}
         onClick={toggleDownButton}
         className={classes.category}
       >

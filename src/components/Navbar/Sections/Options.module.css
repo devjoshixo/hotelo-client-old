@@ -7,6 +7,8 @@
   font-family: 'Montserrat';
   font-size: 15px;
   cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .options p:hover {
@@ -28,6 +30,10 @@
   .options {
     flex-flow: column nowrap;
     gap: 0;
+    margin-left: 1rem;
+  }
+
+  .caret {
     margin-left: 1rem;
   }
 }

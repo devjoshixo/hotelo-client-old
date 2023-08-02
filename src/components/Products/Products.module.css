@@ -42,12 +42,6 @@
   background-color: #386997;
 }
 
-.header {
-  color: black;
-  margin-left: 5rem;
-  font-size: 2.2rem;
-}
-
 .notloaded {
   display: none;
 }
