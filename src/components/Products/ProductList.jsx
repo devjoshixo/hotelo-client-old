@@ -3,7 +3,6 @@ import ProductTile from './ProductTile';
 import classes from './ProductList.module.css';
 
 const ProductList = (props) => {
-  // const hotel = props.hotelList[0];
   return (
     <>
       <h1 className={classes.header}>Hotels for you!</h1>
