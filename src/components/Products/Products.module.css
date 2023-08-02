@@ -2,6 +2,7 @@
   position: relative;
   width: 100vw;
   height: 20rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .displayImage img {
@@ -19,6 +20,7 @@
   width: 40%;
   margin: 3rem 0 0 5rem;
   line-height: normal;
+  user-select: none;
 }
 
 .action {
@@ -32,6 +34,7 @@
   width: 9rem;
   height: 3rem;
   font-size: 1.2rem;
+  user-select: none;
 }
 
 .action:hover {
@@ -69,5 +72,10 @@
     width: 5.2rem;
     height: 1.5rem;
     font-size: 13px;
+  }
+
+  .header {
+    font-size: 1.3rem;
+    margin: 10px 0 0 15px;
   }
 }
