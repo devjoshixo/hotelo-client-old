@@ -15,21 +15,11 @@ const ProductDisplay = () => {
   const navigation = useLocation();
   console.log(navigation);
 
-  useEffect(() => {
-    async function getHotelInfo() {
-      const data = await getHotelDetails(ctx.hotelData.id);
-      console.log(data);
-      const hotel = await hotelInfoData(data, {
-        price: ctx.hotelData.price,
-        originalPrice: ctx.hotelData.originalPrice,
-      });
-      setHotel(hotel);
-    }
-    getHotelInfo(hotel);
-  }, []);
   // useEffect(() => {
   //   async function getHotelInfo() {
-  //     const hotel = await hotelInfoData(hoteldata, {
+  //     const data = await getHotelDetails(ctx.hotelData.id);
+  //     console.log(data);
+  //     const hotel = await hotelInfoData(data, {
   //       price: ctx.hotelData.price,
   //       originalPrice: ctx.hotelData.originalPrice,
   //     });
@@ -37,6 +27,16 @@ const ProductDisplay = () => {
   //   }
   //   getHotelInfo(hotel);
   // }, []);
+  useEffect(() => {
+    async function getHotelInfo() {
+      const hotel = await hotelInfoData(hoteldata, {
+        price: ctx.hotelData.price,
+        originalPrice: ctx.hotelData.originalPrice,
+      });
+      setHotel(hotel);
+    }
+    getHotelInfo(hotel);
+  }, []);
 
   return (
     <>

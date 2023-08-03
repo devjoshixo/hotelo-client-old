@@ -5,7 +5,7 @@ import hoteldata from '../../../api/hoteldata';
 import HotelContext from '../../../context/HotelJsonContext';
 
 const ProductTile = (props) => {
-  const hotel = hoteldata(props.hotel);
+  const hotel = props.hotel;
   const name = hotel.name.split(' ');
   const ctx = useContext(HotelContext);
   const navigation = useHistory();

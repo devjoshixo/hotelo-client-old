@@ -5,25 +5,30 @@ import classes from './Products.module.css';
 import data from '../../../api/data';
 import ProductList from './ProductList';
 import getHotels from '../../../api/getHotels';
+import hoteldata from '../../../api/hoteldata';
 
 const Products = () => {
   const [loaded, setLoaded] = useState(false);
   const [hotels, setHotels] = useState(null);
 
-  useEffect(() => {
-    const getHomepageHotels = async () => {
-      const result = await getHotels();
-      setHotels(result);
-    };
-    getHomepageHotels();
-  }, []);
   // useEffect(() => {
   //   const getHomepageHotels = async () => {
-  //     const result = await data.properties;
+  //     const result = await getHotels();
   //     setHotels(result);
   //   };
   //   getHomepageHotels();
   // }, []);
+  useEffect(() => {
+    const getHomepageHotels = async () => {
+      const result = await data.properties;
+      const converted = result.map((item) => {
+        return hoteldata(item);
+      });
+      setHotels(converted);
+      console.log('use');
+    };
+    getHomepageHotels();
+  }, []);
   return (
     <>
       <div
