@@ -4,6 +4,7 @@ import hotelPhoto from '../../../assets/display.jpg';
 import classes from './Products.module.css';
 import data from '../../../api/data';
 import ProductList from './ProductList';
+import getHotels from '../../../api/getHotels';
 
 const Products = () => {
   const [loaded, setLoaded] = useState(false);
@@ -11,11 +12,18 @@ const Products = () => {
 
   useEffect(() => {
     const getHomepageHotels = async () => {
-      const result = await data.properties;
+      const result = await getHotels();
       setHotels(result);
     };
     getHomepageHotels();
   }, []);
+  // useEffect(() => {
+  //   const getHomepageHotels = async () => {
+  //     const result = await data.properties;
+  //     setHotels(result);
+  //   };
+  //   getHomepageHotels();
+  // }, []);
   return (
     <>
       <div

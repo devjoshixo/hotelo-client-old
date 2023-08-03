@@ -11,8 +11,9 @@ const getHotels = async () => {
 
   try {
     const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
+    const properties = await response.json();
+    const result = await properties.properties;
+    return result;
   } catch (error) {
     console.error(error);
   }
