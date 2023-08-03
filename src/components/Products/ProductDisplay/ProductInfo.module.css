@@ -1,0 +1,19 @@
+.name {
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+
+.tagline {
+  font-size: 15px;
+}
+
+.price {
+  padding: 1rem 1rem 1rem 0;
+  border-top: 1px solid rgba(112, 112, 112, 0.42);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.42);
+}
+
+.originalPrice {
+  color: rgb(101, 101, 101);
+  font-weight: lighter;
+}

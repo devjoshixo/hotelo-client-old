@@ -1,0 +1,46 @@
+.Gallery {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 46%;
+  flex-flow: column;
+  align-items: center;
+  border-right: 1.2px solid rgba(139, 139, 139, 0.411);
+}
+
+.mainImage {
+  width: 28rem;
+  height: 28rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.images {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  width: 80%;
+  margin-left: 3rem;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagetile {
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+}
+
+.imagetile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.25s;
+  border-radius: 6px;
+}
+
+.imagetile img:hover {
+  filter: brightness(0.7);
+  transform: scale(1.06);
+}

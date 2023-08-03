@@ -4,6 +4,7 @@ const hotelInfoData = (hotel) => {
     name: hotel.summary.name,
     tagline: hotel.summary.tagline,
     images: images,
+    rating: hotel.summary.overview.propertyRating.rating,
   };
   return data;
 };
