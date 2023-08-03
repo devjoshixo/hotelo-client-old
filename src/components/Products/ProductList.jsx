@@ -10,7 +10,6 @@ const ProductList = (props) => {
         {props.hotelList.map((hotel) => {
           return <ProductTile hotel={hotel} key={hotel.id} />;
         })}
-        {/* <ProductTile hotel={props.hotelList} /> */}
       </div>
     </>
   );

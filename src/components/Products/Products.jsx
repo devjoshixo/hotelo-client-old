@@ -16,7 +16,7 @@ const Products = () => {
     };
     getHomepageHotels();
   }, []);
-
+  console.log(hotels);
   return (
     <>
       <div
