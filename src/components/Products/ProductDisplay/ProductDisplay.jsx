@@ -6,6 +6,7 @@ import ProductGallery from './ProductGallery';
 import ProductInfo from './ProductInfo';
 import HotelContext from '../../../context/HotelJsonContext';
 import { useLocation } from 'react-router-dom';
+import getHotelDetails from '../../../api/getHotelDetails';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
@@ -16,7 +17,9 @@ const ProductDisplay = () => {
 
   useEffect(() => {
     async function getHotelInfo() {
-      const hotel = await hotelInfoData(hoteldata, {
+      const data = await getHotelDetails(ctx.hotelData.id);
+      console.log(data);
+      const hotel = await hotelInfoData(data, {
         price: ctx.hotelData.price,
         originalPrice: ctx.hotelData.originalPrice,
       });
@@ -24,6 +27,16 @@ const ProductDisplay = () => {
     }
     getHotelInfo(hotel);
   }, []);
+  // useEffect(() => {
+  //   async function getHotelInfo() {
+  //     const hotel = await hotelInfoData(hoteldata, {
+  //       price: ctx.hotelData.price,
+  //       originalPrice: ctx.hotelData.originalPrice,
+  //     });
+  //     setHotel(hotel);
+  //   }
+  //   getHotelInfo(hotel);
+  // }, []);
 
   return (
     <>

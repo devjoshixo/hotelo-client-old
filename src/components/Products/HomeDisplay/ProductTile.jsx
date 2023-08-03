@@ -12,12 +12,8 @@ const ProductTile = (props) => {
 
   const clickHandler = (event) => {
     console.log(event.target.name);
-    if (event.target.name == 'Heart') {
-      return;
-    } else {
-      ctx.setHotelData(hotel);
-      navigation.push('/hotel/' + hotel.id);
-    }
+    ctx.setHotelData(hotel);
+    navigation.push('/hotel/details?id=' + hotel.id);
   };
 
   return (
