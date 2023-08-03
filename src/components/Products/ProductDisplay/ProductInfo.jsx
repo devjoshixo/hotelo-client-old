@@ -41,7 +41,7 @@ const ProductInfo = (props) => {
       </h2>
 
       <h3>Number of Adults</h3>
-      <div style={{ display: 'flex' }}>
+      <div className={classes.wrapperbooking}>
         <div className={classes.booking}>
           <p data-site='sub' onClick={handleSubClick}>
             -

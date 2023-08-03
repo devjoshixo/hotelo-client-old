@@ -13,12 +13,12 @@
 
 .offer {
   position: absolute;
-  top: 10%;
+  top: 4%;
   left: 5%;
   color: white;
   font-family: 'Montserrat';
   font-size: 3.5rem;
-  width: 40%;
+  max-width: 50%;
   line-height: normal;
   user-select: none;
 }
@@ -48,20 +48,22 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile: */
+  .displayImage {
+    height: 13rem;
+  }
   .displayImage img {
     object-fit: fill;
-    height: 50%;
   }
 
   .offer {
     font-size: 1rem;
-    top: 8%;
+    top: 9%;
     left: 4%;
     width: 50%;
   }
 
   .action {
-    top: 30%;
+    top: 50%;
     left: 3%;
     width: 5.2rem;
     height: 1.5rem;

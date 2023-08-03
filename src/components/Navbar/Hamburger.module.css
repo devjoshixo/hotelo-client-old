@@ -5,7 +5,7 @@
 }
 
 .search {
-  margin: 2.1rem 0.3rem 0 0;
+  margin: 1rem 0.3rem 0 0;
   color: #2f5b85;
 }
 
@@ -55,16 +55,16 @@
 }
 
 .icon3 span:nth-child(1) {
-  top: 10px;
+  top: -5px;
 }
 
 .icon3 span:nth-child(2),
 .icon3 span:nth-child(3) {
-  top: 21px;
+  top: 6px;
 }
 
 .icon3 span:nth-child(4) {
-  top: 32px;
+  top: 17px;
 }
 
 .open span:nth-child(1) {

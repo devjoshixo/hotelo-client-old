@@ -19,10 +19,8 @@
   margin: 0 4px 0 6px;
 }
 
-.floater {
+.wrapperbooking {
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
 }
 
 .booking {
@@ -81,4 +79,37 @@
   margin: 3rem 0 2rem 0;
   border-top: 1px solid rgba(112, 112, 112, 0.27);
   border-bottom: 1px solid rgba(112, 112, 112, 0.27);
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    padding: 1rem;
+  }
+
+  .facilities {
+    text-align: center;
+  }
+  .facilities li {
+    list-style-type: none;
+  }
+  .wrapperbooking {
+    justify-content: center;
+  }
+
+  .booking {
+    margin-top: 2px;
+    text-align: center;
+    height: 3rem;
+    align-items: flex-end;
+  }
+
+  .booking p {
+    width: 2px;
+    height: 3px;
+    margin-top: 2rem;
+  }
+
+  .booking p:hover {
+    background-color: transparent;
+  }
 }

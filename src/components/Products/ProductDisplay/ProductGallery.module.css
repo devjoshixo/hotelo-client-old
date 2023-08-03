@@ -44,3 +44,12 @@
   filter: brightness(0.7);
   transform: scale(1.06);
 }
+
+@media only screen and (max-width: 768px) {
+  .images {
+    display: none;
+  }
+  .mainImage {
+    display: none;
+  }
+}

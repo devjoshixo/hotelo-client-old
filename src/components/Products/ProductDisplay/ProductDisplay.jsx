@@ -7,10 +7,13 @@ import ProductInfo from './ProductInfo';
 import HotelContext from '../../../context/HotelJsonContext';
 import { useLocation } from 'react-router-dom';
 import getHotelDetails from '../../../api/getHotelDetails';
+import { useMediaQuery } from 'react-responsive';
+import MobileGallery from './MobileGallery';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
   const ctx = useContext(HotelContext);
+  const isMobile = useMediaQuery({ maxWidth: '500px' });
 
   const navigation = useLocation();
   console.log(navigation);
@@ -42,7 +45,11 @@ const ProductDisplay = () => {
     <>
       {hotel && (
         <div className={classes.productcard}>
-          <ProductGallery hotel={hotel} />
+          {isMobile ? (
+            <MobileGallery hotel={hotel} />
+          ) : (
+            <ProductGallery hotel={hotel} />
+          )}
           <ProductInfo hotel={hotel} />
         </div>
       )}
