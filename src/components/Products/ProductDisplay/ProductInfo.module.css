@@ -9,11 +9,76 @@
 
 .price {
   padding: 1rem 1rem 1rem 0;
-  border-top: 1px solid rgba(112, 112, 112, 0.42);
-  border-bottom: 1px solid rgba(112, 112, 112, 0.42);
+  border-top: 1px solid rgba(112, 112, 112, 0.27);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.27);
 }
 
 .originalPrice {
   color: rgb(101, 101, 101);
   font-weight: lighter;
+  margin: 0 4px 0 6px;
+}
+
+.floater {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.booking {
+  display: flex;
+  color: #2f5b85;
+  font-weight: bold;
+  justify-content: space-evenly;
+  width: 9rem;
+  margin: -0.4rem 1rem 0 0;
+  border-radius: 20px;
+  border: 1px solid #2f5b85;
+  background-color: #f5f6f6;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.booking p {
+  width: 1rem;
+  padding-left: 0.5rem;
+}
+
+.booking p:hover {
+  background-color: rgb(228, 228, 228);
+  border-radius: 20px;
+}
+
+.booknow {
+  color: white;
+  background-color: #182e43;
+  border: none;
+  border-radius: 20px;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  user-select: none;
+}
+.booknow:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #386997;
+  color: #386997;
+}
+
+.facilities {
+  padding: 2rem 0 2rem 1.5rem;
+  border-top: 1px solid rgba(112, 112, 112, 0.27);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.27);
+  margin: 2rem 0 3rem 0;
+}
+
+.facilities li {
+  line-height: 2rem;
+}
+
+.checkin {
+  padding: 1rem 0 2rem 0rem;
+  margin: 3rem 0 2rem 0;
+  border-top: 1px solid rgba(112, 112, 112, 0.27);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.27);
 }

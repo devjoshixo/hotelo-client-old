@@ -27,7 +27,7 @@ const Products = () => {
             setLoaded(true);
           }}
         />
-        <h2 className={classes.offer}>Grab Upto 50% on selected Hotels</h2>
+        <h2 className={classes.offer}>Grab Upto 50% off on selected Hotels</h2>
         <button className={classes.action}>Book Now</button>
       </div>
       {hotels && <ProductList hotelList={hotels} />}

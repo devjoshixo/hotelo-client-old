@@ -1,5 +1,5 @@
 const hotelInfoData = (hotel, price) => {
-  const images = hotel.propertyGallery.images.slice(0, 8);
+  const images = hotel.propertyGallery.images.slice(0, 4);
   const data = {
     name: hotel.summary.name,
     tagline: hotel.summary.tagline,
