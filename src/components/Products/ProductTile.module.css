@@ -1,3 +1,11 @@
+.productcard {
+  border: transparent;
+  transition: 0.25s;
+  margin-bottom: 1rem;
+}
+.productcard:hover {
+  transform: scale(1.04);
+}
 .imagecard {
   width: 20rem;
   height: 20rem;
@@ -10,17 +18,41 @@
   object-fit: cover;
 }
 
+.infocard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .name {
   color: black;
   font-family: 'Montserrat';
-  font-size: 15px;
+  font-size: 17px;
   margin: 10px 0 0 10px;
   font-weight: 600;
 }
 
 .info {
   margin: 0px 0 0 10px;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Montserrat';
+  color: rgba(47, 47, 47, 0.714);
+  font-weight: 300;
+}
+
+.price {
+  font-size: 17px;
+  margin: 0px 0 0 10px;
+  font-weight: bold;
+}
+
+.cutout {
   font-weight: lighter;
+}
+
+.rating {
+  display: flex;
+  top: 93%;
+  left: 88%;
+  margin-right: 10px;
 }

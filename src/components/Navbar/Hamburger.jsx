@@ -17,8 +17,6 @@ const Hamburger = () => {
     }
   };
 
-  console.log(onOpen);
-
   return (
     <div className={classes.rightsection}>
       <i className={`fa-solid fa-magnifying-glass fa-xl ${classes.search}`}></i>
