@@ -1,29 +1,35 @@
 import React from 'react';
 import classes from './ProductTile.module.css';
+import { useHistory } from 'react-router-dom';
+import hoteldata from '../../../api/hoteldata';
 
 const ProductTile = (props) => {
-  const hotel = props.hotel;
+  const hotel = hoteldata(props.hotel);
   const name = hotel.name.split(' ');
-  console.log(hotel.star);
+
+  const navigation = useHistory();
+
+  const clickHandler = () => {
+    navigation.push('/hotel/' + hotel.id);
+  };
+
   return (
-    <div className={classes.productcard}>
+    <div className={classes.productcard} onClick={clickHandler}>
       <div className={classes.imagecard}>
-        <img src={hotel.propertyImage.image.url} />
+        <img src={hotel.url} />
       </div>
       <div className={classes.infocard}>
         <div>
           <h3 className={classes.name}>{name[0] + ' ' + name[1]}</h3>
           <p className={classes.info}>
-            {hotel.destinationInfo.distanceFromDestination.value +
-              ' ' +
-              hotel.destinationInfo.distanceFromDestination.unit}
+            {hotel.distnationValue + ' ' + hotel.destinationUnit}
             away
           </p>
           <p className={classes.price}>
-            {hotel.price.lead.formatted}{' '}
-            {hotel.price.strikeOut ? (
+            {hotel.price}{' '}
+            {hotel.originalPrice ? (
               <s className={classes.cutout}>
-                <i>{hotel.price.strikeOut.formatted}</i>
+                <i>{hotel.originalPrice}</i>
               </s>
             ) : (
               ''

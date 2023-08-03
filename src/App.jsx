@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Homepage from './Pages/Homepage';
 import Navbar from './components/Navbar/Navbar';
+import ProductPage from './Pages/ProductPage';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Route path='/' exact>
           <Homepage />
         </Route>
-        <Route path='/done'>done</Route>
+        <Route path='/hotel/:id'>
+          <ProductPage />
+        </Route>
       </Switch>
     </>
   );
