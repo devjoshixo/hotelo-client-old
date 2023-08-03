@@ -3,8 +3,8 @@ const hotel = {
   summary: {
     __typename: 'PropertySummary',
     fees: null,
-    id: '89168874',
-    name: 'Hotel Nerudova 211',
+    id: '66932918',
+    name: 'Hotel CUBE Prague',
     map: {
       __typename: 'PropertyInfoMap',
       markers: [
@@ -21,7 +21,7 @@ const hotel = {
             type: 'POI',
           },
           poiContent: null,
-          subtitle: '30 min drive',
+          subtitle: '34 min drive',
           title: 'Prague (PRG-Vaclav Havel)',
         },
         {
@@ -37,7 +37,7 @@ const hotel = {
             type: 'POI',
           },
           poiContent: null,
-          subtitle: '42 min drive',
+          subtitle: '47 min drive',
           title: 'Vodochody Airport (VOD)',
         },
         {
@@ -47,19 +47,19 @@ const hotel = {
             icon: 'HOTEL',
             latLong: {
               __typename: 'Coordinates',
-              latitude: 50.088625,
-              longitude: 14.401106,
+              latitude: 50.079023,
+              longitude: 14.417016,
             },
             type: 'HOTEL',
           },
           poiContent: {
             __typename: 'PoiContent',
             description: null,
-            id: '89168874',
+            id: '66932918',
             image: null,
           },
           subtitle: null,
-          title: 'Hotel Nerudova 211',
+          title: 'Hotel CUBE Prague',
         },
       ],
     },
@@ -67,9 +67,10 @@ const hotel = {
       __typename: 'PropertyPolicies',
       checkinEnd: null,
       checkinInstructions: [
-        'The front desk is open daily from 7:30 AM - 9:00 PM',
-        'Front desk staff will greet guests on arrival',
-        'If you are planning to arrive after 3:00 PM please contact the property in advance using the information on the booking confirmation',
+        'This property offers transfers from the airport (surcharges may apply); guests must contact the property with arrival details before travel, using the contact information on the booking confirmation',
+        'Guests will receive an email 24 hours before arrival with check-in instructions; front desk staff will greet guests on arrival',
+        'If you are planning to arrive after 2:00 PM please contact the property in advance using the information on the booking confirmation',
+        'At check-in, guests must provide a record of full COVID-19 vaccination',
       ],
       checkinMinAge: null,
       checkinStart: null,
@@ -77,24 +78,20 @@ const hotel = {
       childAndBed: null,
       needToKnow: {
         __typename: 'PropertyInfoSubSection',
-        body: [
-          'This property does not have elevators. ',
-          "Guests can rest easy knowing there's a fire extinguisher and a smoke detector on site. ",
-          'This property accepts credit cards and cash.',
-        ],
+        body: ['This property accepts credit cards and cash.'],
         descriptions: [],
         title: 'You need to know',
       },
       paymentOptions: [],
       pets: {
         __typename: 'PropertyInfoSubSection',
-        body: ['Pets not allowed'],
+        body: ['Pets not allowed', 'Service animals welcome'],
         descriptions: [],
         title: 'Pets',
       },
       shouldMention: {
         __typename: 'PropertyInfoSubSection',
-        body: ['This property does not have elevators'],
+        body: ['Parking height restrictions apply'],
         descriptions: [],
         title: 'We should mention',
       },
@@ -102,7 +99,8 @@ const hotel = {
     telesalesPhoneNumber: '',
     bannerMessage: null,
     latinAlphabetName: '',
-    tagline: '4-star hotel with bar/lounge, near Prague Castle ',
+    tagline:
+      'Central hotel with restaurant, connected to a shopping center, near Dancing House\n',
     starRatingIcon: {
       __typename: 'Icon',
       token: 'STAR',
@@ -111,12 +109,12 @@ const hotel = {
       __typename: 'PropertyOverview',
       vipMessaging: null,
       inventoryType: null,
-      accessibilityLabel: 'Overview of Hotel Nerudova 211',
+      accessibilityLabel: 'Overview of Hotel CUBE Prague',
       label: null,
       propertyRating: {
         __typename: 'EGDSIconRating',
-        rating: 4,
-        accessibility: '4.0 star property',
+        rating: 3.5,
+        accessibility: '3.5 star property',
         icon: {
           __typename: 'Icon',
           id: 'star',
@@ -163,7 +161,14 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: '10 rooms',
+                  text: '71 rooms',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Arranged over 5 floors',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -211,7 +216,7 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Check-out time is 11:00 AM',
+                  text: 'Check-out time is noon',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -243,6 +248,13 @@ const hotel = {
                   moreInfo: null,
                   icon: null,
                 },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'At check-in, guests must provide a record of full COVID-19 vaccination',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
               ],
             },
             {
@@ -265,21 +277,28 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'The front desk is open daily from 7:30 AM - 9:00 PM',
+                  text: 'This property offers transfers from the airport (surcharges may apply); guests must contact the property with arrival details before travel, using the contact information on the booking confirmation',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Front desk staff will greet guests on arrival',
+                  text: 'Guests will receive an email 24 hours before arrival with check-in instructions; front desk staff will greet guests on arrival',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'If you are planning to arrive after 3:00 PM please contact the property in advance using the information on the booking confirmation',
+                  text: 'If you are planning to arrive after 2:00 PM please contact the property in advance using the information on the booking confirmation',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'At check-in, guests must provide a record of full COVID-19 vaccination',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -352,6 +371,13 @@ const hotel = {
                   moreInfo: null,
                   icon: null,
                 },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Service animals welcome',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
               ],
             },
             {
@@ -381,7 +407,7 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Free WiFi in rooms (speed: 100+ Mbps (good for 1–2 people or up to 6 devices))',
+                  text: 'Free WiFi in rooms',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -408,14 +434,48 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Offsite parking nearby (EUR 15 per night)',
+                  text: 'Secured covered onsite self parking (EUR 30 per day; includes in/out privileges)',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Street parking available',
+                  text: 'Onsite parking limited',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Height restrictions apply for onsite parking',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+              ],
+            },
+            {
+              __typename: 'PropertyInfoContent',
+              header: {
+                __typename: 'LodgingHeader',
+                text: 'Transfers',
+                subText: null,
+                mark: null,
+              },
+              icon: {
+                __typename: 'Icon',
+                id: 'done',
+                description: '',
+                size: null,
+                token: 'done',
+                theme: null,
+              },
+              jumpLink: null,
+              items: [
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Airport shuttle on request (available 24 hours)* ',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -482,7 +542,14 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Cooked-to-order breakfast (surcharge) each morning 8:00 AM–1:00 PM',
+                  text: 'Buffet breakfast (surcharge) each morning 7:00 AM–10:30 AM',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Restaurant',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -496,14 +563,41 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Coffee shop',
+                  text: 'Coffee/tea in a common area',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Coffee/tea in a common area',
+                  text: 'Water dispenser',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+              ],
+            },
+            {
+              __typename: 'PropertyInfoContent',
+              header: {
+                __typename: 'LodgingHeader',
+                text: 'Working away',
+                subText: null,
+                mark: null,
+              },
+              icon: {
+                __typename: 'Icon',
+                id: 'business_center',
+                description: '',
+                size: null,
+                token: 'business_center',
+                theme: null,
+              },
+              jumpLink: null,
+              items: [
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Conference space',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -530,14 +624,7 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Front desk (limited hours)',
-                  state: null,
-                  moreInfo: null,
-                  icon: null,
-                },
-                {
-                  __typename: 'PropertyInfoItem',
-                  text: 'Concierge services',
+                  text: '24-hour front desk',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -559,6 +646,13 @@ const hotel = {
                 {
                   __typename: 'PropertyInfoItem',
                   text: 'Luggage storage',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Wedding services',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -592,7 +686,21 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'ATM/banking',
+                  text: '2 buildings/towers',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Television in common areas',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Lockers available',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -619,7 +727,56 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Upper floors accessible by stairs only',
+                  text: 'Braille/raised signage',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Elevator',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Wheelchair-accessible path to elevator',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Wheelchair-accessible registration desk',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Wheelchair-accessible business center',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Handrails in hallways',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Handrails in stairways',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Wheelchairs available on site',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -659,28 +816,14 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Smart television',
+                  text: '43-inch flat-screen TV',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Premium digital channels',
-                  state: null,
-                  moreInfo: null,
-                  icon: null,
-                },
-                {
-                  __typename: 'PropertyInfoItem',
-                  text: 'Netflix',
-                  state: null,
-                  moreInfo: null,
-                  icon: null,
-                },
-                {
-                  __typename: 'PropertyInfoItem',
-                  text: 'Pay movies',
+                  text: 'Satellite TV channels',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -707,7 +850,7 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Heating',
+                  text: 'Climate-controlled air conditioning and heating',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -721,21 +864,21 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Electric kettle',
+                  text: 'Slippers',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Bathrobes and slippers',
+                  text: "Children's slippers",
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Iron/ironing board',
+                  text: 'Iron/ironing board (on request)',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -762,6 +905,20 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
+                  text: 'Hypo-allergenic bedding',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Pillow menu',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
                   text: 'Blackout drapes/curtains',
                   state: null,
                   moreInfo: null,
@@ -770,6 +927,13 @@ const hotel = {
                 {
                   __typename: 'PropertyInfoItem',
                   text: 'Soundproofed rooms',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Turndown service',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -810,7 +974,7 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Heated floor (bathroom)',
+                  text: 'In-room massage',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -835,6 +999,20 @@ const hotel = {
               },
               jumpLink: null,
               items: [
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Rainfall showerhead',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Shower only',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
                 {
                   __typename: 'PropertyInfoItem',
                   text: 'Designer toiletries',
@@ -899,7 +1077,14 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Free WiFi (speed of 100+ Mbps (good for 1–2 people or up to 6 devices)) ',
+                  text: 'Free WiFi',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Free local calls',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -933,14 +1118,21 @@ const hotel = {
               items: [
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Mini-fridge',
+                  text: 'Kitchen',
                   state: null,
                   moreInfo: null,
                   icon: null,
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Free tea bags/instant coffee',
+                  text: 'Free bottled water',
+                  state: null,
+                  moreInfo: null,
+                  icon: null,
+                },
+                {
+                  __typename: 'PropertyInfoItem',
+                  text: 'Highchair',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -974,21 +1166,7 @@ const hotel = {
                 },
                 {
                   __typename: 'PropertyInfoItem',
-                  text: 'Guidebooks/recommendations',
-                  state: null,
-                  moreInfo: null,
-                  icon: null,
-                },
-                {
-                  __typename: 'PropertyInfoItem',
-                  text: 'Local maps',
-                  state: null,
-                  moreInfo: null,
-                  icon: null,
-                },
-                {
-                  __typename: 'PropertyInfoItem',
-                  text: 'Restaurant dining guide',
+                  text: 'In-room safe (laptop compatible)',
                   state: null,
                   moreInfo: null,
                   icon: null,
@@ -1011,6 +1189,20 @@ const hotel = {
         items: [
           {
             __typename: 'PropertyInfoItem',
+            text: 'Parking available',
+            state: null,
+            moreInfo: null,
+            icon: {
+              __typename: 'Icon',
+              id: 'local_parking',
+              description: '',
+              size: null,
+              token: 'local_parking',
+              theme: null,
+            },
+          },
+          {
+            __typename: 'PropertyInfoItem',
             text: 'Free WiFi',
             state: null,
             moreInfo: null,
@@ -1020,6 +1212,34 @@ const hotel = {
               description: '',
               size: null,
               token: 'wifi',
+              theme: null,
+            },
+          },
+          {
+            __typename: 'PropertyInfoItem',
+            text: 'Air conditioning',
+            state: null,
+            moreInfo: null,
+            icon: {
+              __typename: 'Icon',
+              id: 'ac_unit',
+              description: '',
+              size: null,
+              token: 'ac_unit',
+              theme: null,
+            },
+          },
+          {
+            __typename: 'PropertyInfoItem',
+            text: 'Restaurant',
+            state: null,
+            moreInfo: null,
+            icon: {
+              __typename: 'Icon',
+              id: 'local_dining',
+              description: '',
+              size: null,
+              token: 'local_dining',
               theme: null,
             },
           },
@@ -1048,20 +1268,6 @@ const hotel = {
               description: '',
               size: null,
               token: 'local_laundry_service',
-              theme: null,
-            },
-          },
-          {
-            __typename: 'PropertyInfoItem',
-            text: 'Non-smoking',
-            state: null,
-            moreInfo: null,
-            icon: {
-              __typename: 'Icon',
-              id: 'smoke_free',
-              description: '',
-              size: null,
-              token: 'smoke_free',
               theme: null,
             },
           },
@@ -1109,6 +1315,20 @@ const hotel = {
             items: [
               {
                 __typename: 'PropertyInfoItem',
+                text: 'Parking available',
+                state: null,
+                moreInfo: null,
+                icon: {
+                  __typename: 'Icon',
+                  id: 'local_parking',
+                  description: '',
+                  size: null,
+                  token: 'local_parking',
+                  theme: null,
+                },
+              },
+              {
+                __typename: 'PropertyInfoItem',
                 text: 'Free WiFi',
                 state: null,
                 moreInfo: null,
@@ -1118,6 +1338,34 @@ const hotel = {
                   description: '',
                   size: null,
                   token: 'wifi',
+                  theme: null,
+                },
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Air conditioning',
+                state: null,
+                moreInfo: null,
+                icon: {
+                  __typename: 'Icon',
+                  id: 'ac_unit',
+                  description: '',
+                  size: null,
+                  token: 'ac_unit',
+                  theme: null,
+                },
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Restaurant',
+                state: null,
+                moreInfo: null,
+                icon: {
+                  __typename: 'Icon',
+                  id: 'local_dining',
+                  description: '',
+                  size: null,
+                  token: 'local_dining',
                   theme: null,
                 },
               },
@@ -1149,20 +1397,6 @@ const hotel = {
                   theme: null,
                 },
               },
-              {
-                __typename: 'PropertyInfoItem',
-                text: 'Non-smoking',
-                state: null,
-                moreInfo: null,
-                icon: {
-                  __typename: 'Icon',
-                  id: 'smoke_free',
-                  description: '',
-                  size: null,
-                  token: 'smoke_free',
-                  theme: null,
-                },
-              },
             ],
           },
         ],
@@ -1187,7 +1421,14 @@ const hotel = {
             items: [
               {
                 __typename: 'PropertyInfoItem',
-                text: 'Cooked-to-order breakfast (surcharge) each morning 8:00 AM–1:00 PM',
+                text: 'Buffet breakfast (surcharge) each morning 7:00 AM–10:30 AM',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Restaurant',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1201,14 +1442,41 @@ const hotel = {
               },
               {
                 __typename: 'PropertyInfoItem',
-                text: 'Coffee shop',
+                text: 'Coffee/tea in a common area',
                 state: null,
                 moreInfo: null,
                 icon: null,
               },
               {
                 __typename: 'PropertyInfoItem',
-                text: 'Coffee/tea in a common area',
+                text: 'Water dispenser',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+            ],
+          },
+          {
+            __typename: 'PropertyInfoContent',
+            header: {
+              __typename: 'LodgingHeader',
+              text: 'Working away',
+              subText: null,
+              mark: null,
+            },
+            icon: {
+              __typename: 'Icon',
+              id: 'business_center',
+              description: '',
+              size: null,
+              token: 'business_center',
+              theme: null,
+            },
+            jumpLink: null,
+            items: [
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Conference space',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1235,14 +1503,7 @@ const hotel = {
             items: [
               {
                 __typename: 'PropertyInfoItem',
-                text: 'Front desk (limited hours)',
-                state: null,
-                moreInfo: null,
-                icon: null,
-              },
-              {
-                __typename: 'PropertyInfoItem',
-                text: 'Concierge services',
+                text: '24-hour front desk',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1264,6 +1525,13 @@ const hotel = {
               {
                 __typename: 'PropertyInfoItem',
                 text: 'Luggage storage',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Wedding services',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1297,7 +1565,21 @@ const hotel = {
             items: [
               {
                 __typename: 'PropertyInfoItem',
-                text: 'ATM/banking',
+                text: '2 buildings/towers',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Television in common areas',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Lockers available',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1324,7 +1606,56 @@ const hotel = {
             items: [
               {
                 __typename: 'PropertyInfoItem',
-                text: 'Upper floors accessible by stairs only',
+                text: 'Braille/raised signage',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Elevator',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Wheelchair-accessible path to elevator',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Wheelchair-accessible registration desk',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Wheelchair-accessible business center',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Handrails in hallways',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Handrails in stairways',
+                state: null,
+                moreInfo: null,
+                icon: null,
+              },
+              {
+                __typename: 'PropertyInfoItem',
+                text: 'Wheelchairs available on site',
                 state: null,
                 moreInfo: null,
                 icon: null,
@@ -1339,17 +1670,17 @@ const hotel = {
       __typename: 'PropertyLocation',
       address: {
         __typename: 'PropertyAddress',
-        addressLine: '211 Nerudova, Prague, Hlavní mesto Praha, 118 00',
+        addressLine: 'Kremencova, 164/18, Prague, 110 00',
         city: 'Prague',
-        province: 'Hlavní mesto Praha',
+        province: '',
         countryCode: 'CZE',
-        firstAddressLine: '211 Nerudova',
-        secondAddressLine: '',
+        firstAddressLine: 'Kremencova',
+        secondAddressLine: '164/18',
       },
       coordinates: {
         __typename: 'Coordinates',
-        latitude: 50.088625,
-        longitude: 14.401106,
+        latitude: 50.079023,
+        longitude: 14.417016,
       },
       multiCityRegion: {
         __typename: 'Region',
@@ -1361,7 +1692,7 @@ const hotel = {
           __typename: 'PropertyEditorial',
           title: 'Prague',
           content: [
-            "Located in Prague, Hotel Nerudova 211 is in the historical district. Charles Bridge and Nerudova Street are local landmarks, and some of the area's attractions include LunaPark and Prague Exhibition Grounds. Looking to enjoy an event or a game while in town? See what's happening at Generali Arena or Municipal House Hall. ",
+            "Located in Prague City Center neighborhood, Hotel CUBE Prague is connected to a rail/subway station. Charles Bridge and Prague National Theatre are local landmarks, and some of the area's attractions include Czech National Museum and LunaPark. Looking to enjoy an event or a game while in town? See what's happening at Municipal House Hall or Czech Lawn Tennis Club. ",
           ],
         },
       },
@@ -1389,7 +1720,7 @@ const hotel = {
       staticImage: {
         __typename: 'Image',
         description: 'Map',
-        url: 'https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=13&scale=&size=600x120&markers=icon:https://a.travel-assets.com/shopping-pwa/images/his-preview-marker.png%7C50.088625,14.401106&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=9AJxwGuVOjhirSkOsHzXM8o1_J4=',
+        url: 'https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=13&scale=&size=600x120&markers=icon:https://a.travel-assets.com/shopping-pwa/images/his-preview-marker.png%7C50.079023,14.417016&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=qsZGmGAnOByVKo4soOyBaj4kWtg=',
         aspectRatio: null,
       },
     },
@@ -1402,892 +1733,438 @@ const hotel = {
     images: [
       {
         __typename: 'PropertyImage',
-        accessibilityText: 'Premier Suite | Terrace/patio, image',
+        accessibilityText: 'Reception, image',
         actionLabel: 'Go to full screen',
-        imageId: '762183447',
+        imageId: '543242724',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/b29b2195.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Premier Suite | Terrace/patio',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/132a4d9e.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Reception',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Restaurant, image',
+        actionLabel: 'Go to full screen',
+        imageId: '674047022',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/fee3480a.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Restaurant',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Front of property, image',
+        actionLabel: 'Go to full screen',
+        imageId: '578889502',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/4137ed99.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Front of property',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
+          'Premium bedding, Select Comfort beds, in-room safe, desk, image',
         actionLabel: 'Go to full screen',
-        imageId: '732125636',
+        imageId: '543252205',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/6dbc8d27.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/e5862001.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
+            'Premium bedding, Select Comfort beds, in-room safe, desk',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite | Private kitchen | Mini-fridge, coffee/tea maker, electric kettle, image',
+        accessibilityText: 'Restaurant, image',
         actionLabel: 'Go to full screen',
-        imageId: '732246449',
+        imageId: '674047015',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/80864797.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite | Private kitchen | Mini-fridge, coffee/tea maker, electric kettle',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732123852',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/059cd3cc.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText: 'Lobby sitting area, image',
-        actionLabel: 'Go to full screen',
-        imageId: '726928339',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/e07cf52e.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Lobby sitting area',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732247795',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/ed396144.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732115833',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a00780cb.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732123849',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/327184c3.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite, 2 Bedrooms | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732249133',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a6a5ec8b.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732125790',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/2b721807.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732115114',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/1dc08add.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '732247794',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/bdab2191.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/183cdf4d.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Restaurant',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText: 'Reception, image',
         actionLabel: 'Go to full screen',
-        imageId: '726927585',
+        imageId: '543241408',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a00d271f.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/62463609.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description: 'Reception',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText: 'Interior entrance, image',
+        accessibilityText:
+          'Shower, rainfall showerhead, designer toiletries, hair dryer, image',
         actionLabel: 'Go to full screen',
-        imageId: '726929320',
+        imageId: '543245091',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/3d425dd6.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Interior entrance',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/ab7d7e9e.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Shower, rainfall showerhead, designer toiletries, hair dryer',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText: 'Interior detail, image',
+        accessibilityText: 'Self parking (EUR 30 per day), image',
         actionLabel: 'Go to full screen',
-        imageId: '726929236',
+        imageId: '674047025',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a158af7f.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Interior detail',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/9d576197.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Self parking (EUR 30 per day)',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText: 'Lobby sitting area, image',
         actionLabel: 'Go to full screen',
-        imageId: '726927667',
+        imageId: '543241242',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/f0491e3c.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/23e26ba8.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description: 'Lobby sitting area',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
+          'Superior Room, Patio | Premium bedding, Select Comfort beds, in-room safe, desk, image',
         actionLabel: 'Go to full screen',
-        imageId: '732116341',
+        imageId: '543249078',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/6eb6658d.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/812d518d.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes',
+            'Superior Room, Patio | Premium bedding, Select Comfort beds, in-room safe, desk',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
+          'Superior Room | Premium bedding, Select Comfort beds, in-room safe, desk, image',
         actionLabel: 'Go to full screen',
-        imageId: '732246450',
+        imageId: '543249418',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/d76bf5d1.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/fcc5e678.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
+            'Superior Room | Premium bedding, Select Comfort beds, in-room safe, desk',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Restaurant, image',
+        actionLabel: 'Go to full screen',
+        imageId: '674047023',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/e0ab91d3.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Restaurant',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Daily buffet breakfast (EUR 15 per person), image',
+        actionLabel: 'Go to full screen',
+        imageId: '579804882',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/81c0b6df.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Daily buffet breakfast (EUR 15 per person)',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Daily buffet breakfast (EUR 15 per person), image',
+        actionLabel: 'Go to full screen',
+        imageId: '578889071',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/690d5709.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Daily buffet breakfast (EUR 15 per person)',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Room | Private kitchen | Mini-fridge, coffee/tea maker, electric kettle, image',
+          'Shower, rainfall showerhead, designer toiletries, hair dryer, image',
         actionLabel: 'Go to full screen',
-        imageId: '732248363',
+        imageId: '543252811',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/9ac84cb1.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/3be4a8ea.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Room | Private kitchen | Mini-fridge, coffee/tea maker, electric kettle',
+            'Shower, rainfall showerhead, designer toiletries, hair dryer',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Deluxe Apartment, Terrace | Bathroom | Shower, rainfall showerhead, designer toiletries, hair dryer, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543243996',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/095f3e7c.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Deluxe Apartment, Terrace | Bathroom | Shower, rainfall showerhead, designer toiletries, hair dryer',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Shower, rainfall showerhead, designer toiletries, hair dryer, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543252880',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/2fffec57.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Shower, rainfall showerhead, designer toiletries, hair dryer',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Deluxe Apartment, Terrace | Living area | 43-inch flat-screen TV with satellite channels, TV, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543242567',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/a4b045a8.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Deluxe Apartment, Terrace | Living area | 43-inch flat-screen TV with satellite channels, TV',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Deluxe Apartment, Terrace | Living area | 43-inch flat-screen TV with satellite channels, TV, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543243591',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/52878d44.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Deluxe Apartment, Terrace | Living area | 43-inch flat-screen TV with satellite channels, TV',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Deluxe Apartment, Terrace | View from room, image',
+        actionLabel: 'Go to full screen',
+        imageId: '578888829',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/6321000c.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Deluxe Apartment, Terrace | View from room',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Duplex | Living area | 43-inch flat-screen TV with satellite channels, TV, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543244965',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/e86d686f.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Duplex | Living area | 43-inch flat-screen TV with satellite channels, TV',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          '43-inch flat-screen TV with satellite channels, TV, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543241787',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/cc92df4d.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: '43-inch flat-screen TV with satellite channels, TV',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          '43-inch flat-screen TV with satellite channels, TV, image',
+        actionLabel: 'Go to full screen',
+        imageId: '674047024',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/72fb46c5.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: '43-inch flat-screen TV with satellite channels, TV',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText: 'Hallway, image',
         actionLabel: 'Go to full screen',
-        imageId: '726928783',
+        imageId: '543242638',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/d942d607.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/249f1087.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description: 'Hallway',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText: 'Staircase, image',
-        actionLabel: 'Go to full screen',
-        imageId: '726927804',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/0b86670c.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Staircase',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
+          'Premium bedding, Select Comfort beds, in-room safe, desk, image',
         actionLabel: 'Go to full screen',
-        imageId: '732247570',
+        imageId: '674047020',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a034c6ff.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/0b9672c7.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
+            'Premium bedding, Select Comfort beds, in-room safe, desk',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
+          '43-inch flat-screen TV with satellite channels, TV, image',
         actionLabel: 'Go to full screen',
-        imageId: '732123850',
+        imageId: '543252060',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/6a65b994.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/c1674e65.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: '43-inch flat-screen TV with satellite channels, TV',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Duplex | Premium bedding, Select Comfort beds, in-room safe, desk, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543248707',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/4b0ad828.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite, 2 Bedrooms | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
+            'Duplex | Premium bedding, Select Comfort beds, in-room safe, desk',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
+          'Duplex | Premium bedding, Select Comfort beds, in-room safe, desk, image',
         actionLabel: 'Go to full screen',
-        imageId: '732116174',
+        imageId: '543245450',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/41b068a5.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/8e2b156e.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description:
-            'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes',
+            'Duplex | Premium bedding, Select Comfort beds, in-room safe, desk',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText: 'Interior detail, image',
+        accessibilityText: 'Exterior, image',
         actionLabel: 'Go to full screen',
-        imageId: '726929055',
+        imageId: '674047021',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4b999ad4.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Interior detail',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/8f691c48.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Exterior',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
+        accessibilityText: 'Interior, image',
         actionLabel: 'Go to full screen',
-        imageId: '732116034',
+        imageId: '543241111',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4e244677.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite, 2 Bedrooms | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText: 'Premier Suite | Terrace/patio, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183479',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/5bb18922.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Premier Suite | Terrace/patio',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185086',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/b5094fcf.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184789',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/cb8cd5c2.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Living area | Smart TV, Netflix, pay movies, streaming services, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184787',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/8c6a1fb0.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Living area | Smart TV, Netflix, pay movies, streaming services',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182286',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/079a6034.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Premier Suite | Living area | Smart TV, Netflix, pay movies, streaming services, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183450',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/15877166.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Premier Suite | Living area | Smart TV, Netflix, pay movies, streaming services',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185101',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/5b5d5f86.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Daily cooked-to-order breakfast (EUR 22 per person), image',
-        actionLabel: 'Go to full screen',
-        imageId: '762181956',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/3983aef1.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Daily cooked-to-order breakfast (EUR 22 per person)',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/8c4afbfe.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Interior',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText: 'Restaurant, image',
         actionLabel: 'Go to full screen',
-        imageId: '762182010',
+        imageId: '674047019',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/117aadee.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/8215c7fe.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description: 'Restaurant',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Meeting facility, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543242912',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/57975695.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Meeting facility',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText:
+          'Shower, rainfall showerhead, designer toiletries, hair dryer, image',
+        actionLabel: 'Go to full screen',
+        imageId: '543250880',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/21855f01.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description:
+            'Shower, rainfall showerhead, designer toiletries, hair dryer',
+        },
+      },
+      {
+        __typename: 'PropertyImage',
+        accessibilityText: 'Balcony, image',
+        actionLabel: 'Go to full screen',
+        imageId: '674047013',
+        image: {
+          __typename: 'Image',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/6e9fcd97.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: 'Balcony',
         },
       },
       {
         __typename: 'PropertyImage',
         accessibilityText: 'Restaurant, image',
         actionLabel: 'Go to full screen',
-        imageId: '762182015',
+        imageId: '674047017',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/e82c0ace.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/a6b4e9e6.jpg?impolicy=resizecrop&rw=500&ra=fit',
           description: 'Restaurant',
         },
       },
       {
         __typename: 'PropertyImage',
-        accessibilityText:
-          'Premier Suite | Living area | Smart TV, Netflix, pay movies, streaming services, image',
+        accessibilityText: ', image',
         actionLabel: 'Go to full screen',
-        imageId: '762183449',
+        imageId: '674047014',
         image: {
           __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/bb7f2151.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Premier Suite | Living area | Smart TV, Netflix, pay movies, streaming services',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '754861926',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/62724201.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183971',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/ef70950a.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182685',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/0e95e507.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Premier Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183460',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/3d9e5e2e.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Premier Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '754859660',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/dd450d75.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185088',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/86ea0f75.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185087',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/dc2eec5a.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185123',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4394853c.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182651',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/fdaf12fc.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Living area | Smart TV, Netflix, pay movies, streaming services, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184788',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/63cdd04a.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Living area | Smart TV, Netflix, pay movies, streaming services',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185090',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/1c43bbae.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182595',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/a1e1b2e3.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184791',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/64640141.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Premier Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183451',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/e0d57211.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Premier Suite | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Premier Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183448',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/8a43651e.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Premier Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185089',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/54846bfc.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183968',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/ce8d8f66.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182263',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/14c9339a.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Studio | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183970',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4b90b770.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Studio | Bathroom | Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184792',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/cc47229e.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183966',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/2ec87e62.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184790',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/62b0b7cf.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762183967',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/2264cdf6.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Studio | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Designer toiletries, hair dryer, bathrobes, slippers, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182686',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/e284ab20.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description: 'Designer toiletries, hair dryer, bathrobes, slippers',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182111',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/5b769830.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762185085',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/0b55e29a.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Basic Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762184793',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4857136e.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Presidential Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182280',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/9bc721f1.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182109',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/86d1f4d9.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182654',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/4bedbc84.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182666',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/24e36c7d.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182281',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/9bbdc2de.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Standard Room | Premium bedding, Select Comfort beds, desk, blackout drapes',
-        },
-      },
-      {
-        __typename: 'PropertyImage',
-        accessibilityText:
-          'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes, image',
-        actionLabel: 'Go to full screen',
-        imageId: '762182108',
-        image: {
-          __typename: 'Image',
-          url: 'https://images.trvl-media.com/lodging/90000000/89170000/89168900/89168874/1d602103.jpg?impolicy=resizecrop&rw=500&ra=fit',
-          description:
-            'Deluxe Suite | Premium bedding, Select Comfort beds, desk, blackout drapes',
+          url: 'https://images.trvl-media.com/lodging/67000000/66940000/66933000/66932918/590f3553.jpg?impolicy=resizecrop&rw=500&ra=fit',
+          description: '',
         },
       },
     ],
-    accessibilityLabel: 'Photo gallery for Hotel Nerudova 211',
+    accessibilityLabel: 'Photo gallery for Hotel CUBE Prague',
     thumbnailGalleryDialog: {
       __typename: 'LodgingGalleryDialog',
       trigger: {
         __typename: 'LodgingDialogTriggerMessage',
-        value: '69+',
+        value: '35+',
         icon: {
           __typename: 'Icon',
           id: 'photo_library',
@@ -2304,7 +2181,7 @@ const hotel = {
       },
       toolbar: {
         __typename: 'LodgingDialogToolbar',
-        title: 'Hotel Nerudova 211',
+        title: 'Hotel CUBE Prague',
         icon: {
           __typename: 'Icon',
           id: 'arrow_back',
@@ -2320,13 +2197,13 @@ const hotel = {
       __typename: 'LodgingGalleryDialog',
       trigger: {
         __typename: 'LodgingDialogTriggerMessage',
-        value: '69+',
+        value: '35+',
         icon: null,
         clientSideAnalytics: null,
       },
       toolbar: {
         __typename: 'LodgingDialogToolbar',
-        title: 'Hotel Nerudova 211',
+        title: 'Hotel CUBE Prague',
         icon: {
           __typename: 'Icon',
           id: 'close',
@@ -2345,11 +2222,11 @@ const hotel = {
       __typename: 'PropertyReviewSummary',
       overallScoreWithDescriptionA11y: {
         __typename: 'LodgingEnrichedMessage',
-        value: '10.0/10 Exceptional',
+        value: '9.8/10 Exceptional',
       },
       propertyReviewCountDetails: {
         __typename: 'PropertyReviewCountDetails',
-        shortDescription: 'See all 2 reviews',
+        shortDescription: 'See all 75 reviews',
       },
       highlightMessage: null,
       seeAllAction: {
@@ -2367,7 +2244,173 @@ const hotel = {
   },
   propertyContentSectionGroups: {
     __typename: 'PropertyContentSectionGroups',
-    cleanliness: null,
+    cleanliness: {
+      __typename: 'PropertyContentSectionGroup',
+      sectionName: 'cleaningAndSafetyPractices',
+      sections: [
+        {
+          __typename: 'PropertyContentSection',
+          sectionName: 'cleaningAndSafetyPractices',
+          header: {
+            __typename: 'LodgingHeader',
+            icon: null,
+            text: 'Cleaning and safety practices',
+            subText: null,
+          },
+          bodySubSections: [
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: 'Enhanced cleanliness measures',
+                    subText: null,
+                    icon: {
+                      __typename: 'Icon',
+                      id: 'cleanliness',
+                      description: '',
+                      size: null,
+                      token: 'icon__cleanliness',
+                      theme: null,
+                    },
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemTexts',
+                      contents: [
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value: 'Disinfectant is used to clean the property',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'Sheets and towels are washed at 60°C/140°F or hotter',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: 'Safety measures',
+                    subText: null,
+                    icon: {
+                      __typename: 'Icon',
+                      id: 'done',
+                      description: '',
+                      size: null,
+                      token: 'icon__done',
+                      theme: null,
+                    },
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemTexts',
+                      contents: [
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'Personal protective equipment worn by staff',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value: 'Hand sanitizer provided',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'At check-in, guests must provide a record of full COVID-19 vaccination',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: null,
+                    subText: null,
+                    icon: null,
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemText',
+                      content: {
+                        __typename: 'PropertyContentText',
+                        primary: {
+                          __typename: 'LodgingEnrichedMessage',
+                          value:
+                            'This information is provided by our partners.',
+                          accessibilityLabel: null,
+                          icon: null,
+                        },
+                        secondary: null,
+                      },
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+          ],
+          action: null,
+        },
+      ],
+    },
     aboutThisProperty: {
       __typename: 'PropertyContentSectionGroup',
       sectionName: null,
@@ -2389,7 +2432,7 @@ const hotel = {
                   __typename: 'PropertyContent',
                   header: {
                     __typename: 'LodgingHeader',
-                    text: 'Hotel Nerudova 211',
+                    text: 'Hotel CUBE Prague',
                     subText: null,
                     icon: null,
                     headerImage: null,
@@ -2399,7 +2442,7 @@ const hotel = {
                       __typename: 'PropertyContentItemMarkup',
                       content: {
                         __typename: 'MarkupText',
-                        text: 'Hotel Nerudova 211 puts you just a 5-minute drive from Charles Bridge and Old Town Square. Guests looking for a bite to eat can check out No. 211 Café & Wine, which serves breakfast and lunch. This upscale hotel is also 0.3 mi (0.6 km) from Prague Castle and 1.1 mi (1.7 km) from Prague Astronomical Clock. Public transportation is just a short walk: Malostranské Náměstí Stop is 4 minutes and Hellichova Stop is 6 minutes.   ',
+                        text: 'Putting you in a great location within a 15-minute walk of Old Town Square and Wenceslas Square, Hotel CUBE Prague offers an airport shuttle (available 24 hours) for EUR 28 per vehicle one-way. You can relax with a drink at the bar/lounge, and the restaurant is the perfect spot to grab a bite to eat. Also, this hotel is 0.4 mi (0.6 km) from Dancing House and 0.7 mi (1.1 km) from Prague Astronomical Clock. Fellow travelers say great things about the breakfast. Public transportation is just a short walk: Myslíkova Stop is 2 minutes and Novoměstská radnice Stop is 4 minutes.   ',
                         markupType: 'HTML',
                       },
                     },
@@ -2428,7 +2471,168 @@ const hotel = {
                         __typename: 'PropertyContentText',
                         primary: {
                           __typename: 'LodgingEnrichedMessage',
-                          value: 'Czech, English',
+                          value: 'Czech, English, German, Slovak',
+                          accessibilityLabel: null,
+                          icon: null,
+                        },
+                        secondary: null,
+                      },
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+          ],
+          action: null,
+        },
+        {
+          __typename: 'PropertyContentSection',
+          sectionName: 'cleaningAndSafetyPractices',
+          header: {
+            __typename: 'LodgingHeader',
+            icon: null,
+            text: 'Cleaning and safety practices',
+            subText: null,
+          },
+          bodySubSections: [
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: 'Enhanced cleanliness measures',
+                    subText: null,
+                    icon: {
+                      __typename: 'Icon',
+                      id: 'cleanliness',
+                      description: '',
+                      size: null,
+                      token: 'icon__cleanliness',
+                      theme: null,
+                    },
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemTexts',
+                      contents: [
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value: 'Disinfectant is used to clean the property',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'Sheets and towels are washed at 60°C/140°F or hotter',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: 'Safety measures',
+                    subText: null,
+                    icon: {
+                      __typename: 'Icon',
+                      id: 'done',
+                      description: '',
+                      size: null,
+                      token: 'icon__done',
+                      theme: null,
+                    },
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemTexts',
+                      contents: [
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'Personal protective equipment worn by staff',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value: 'Hand sanitizer provided',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                        {
+                          __typename: 'PropertyContentText',
+                          primary: {
+                            __typename: 'LodgingEnrichedMessage',
+                            value:
+                              'At check-in, guests must provide a record of full COVID-19 vaccination',
+                            accessibilityLabel: null,
+                            icon: null,
+                          },
+                          secondary: null,
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: null,
+                    subText: null,
+                    icon: null,
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemText',
+                      content: {
+                        __typename: 'PropertyContentText',
+                        primary: {
+                          __typename: 'LodgingEnrichedMessage',
+                          value:
+                            'This information is provided by our partners.',
                           accessibilityLabel: null,
                           icon: null,
                         },
@@ -2467,6 +2671,41 @@ const hotel = {
                   __typename: 'PropertyContent',
                   header: {
                     __typename: 'LodgingHeader',
+                    text: 'Mandatory fees',
+                    subText: null,
+                    icon: null,
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemMarkup',
+                      content: {
+                        __typename: 'MarkupText',
+                        text: "You'll be asked to pay the following charges by the property at check-in or check-out: <br/>",
+                        markupType: 'HTML',
+                      },
+                    },
+                    {
+                      __typename: 'PropertyContentItemMarkup',
+                      content: {
+                        __typename: 'MarkupText',
+                        text: '<ul><li><strong>A tax</strong> is imposed by the city: EUR 2.11 per person, per night, up to 60 nights </li></ul>',
+                        markupType: 'HTML',
+                      },
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
                     text: 'Optional extras',
                     subText: null,
                     icon: null,
@@ -2477,7 +2716,7 @@ const hotel = {
                       __typename: 'PropertyContentItemMarkup',
                       content: {
                         __typename: 'MarkupText',
-                        text: '<ul><li><strong>Cooked-to-order breakfast</strong> is offered for an extra charge of approximately EUR 22 for adults and EUR 22 for children</li> </ul>',
+                        text: '<ul><li><strong>Buffet breakfast</strong> is offered for an extra charge of approximately EUR 15 per person</li><li><strong>Airport shuttle</strong> service is offered for an extra charge of EUR 28 per vehicle (one-way, maximum occupancy 4)</li> </ul>',
                         markupType: 'HTML',
                       },
                     },
@@ -2504,7 +2743,34 @@ const hotel = {
                       __typename: 'PropertyContentItemMarkup',
                       content: {
                         __typename: 'MarkupText',
-                        text: '<ul><li>Parking is available nearby and costs EUR 15 per night</li></ul>',
+                        text: '<ul><li>Covered self parking costs EUR 30 per day with in/out privileges</li><li>Parking height restrictions apply </li></ul>',
+                        markupType: 'HTML',
+                      },
+                    },
+                  ],
+                },
+              ],
+              expando: null,
+              maxColumns: 1,
+            },
+            {
+              __typename: 'PropertyContentSubSection',
+              elements: [
+                {
+                  __typename: 'PropertyContent',
+                  header: {
+                    __typename: 'LodgingHeader',
+                    text: 'Hygiene & cleanliness',
+                    subText: null,
+                    icon: null,
+                    headerImage: null,
+                  },
+                  items: [
+                    {
+                      __typename: 'PropertyContentItemMarkup',
+                      content: {
+                        __typename: 'MarkupText',
+                        text: '<p>This property advises that enhanced cleaning and guest safety measures are currently in place.</p><p>Disinfectant is used to clean the property, and bed sheets and towels are laundered at a temperature of at least 60°C/140°F.</p><p>Staff at the property wear personal protective equipment and guests are provided with hand sanitizer.</p><p>At check-in, guests must provide a record of full COVID-19 vaccination.</p>',
                         markupType: 'HTML',
                       },
                     },
@@ -2530,27 +2796,6 @@ const hotel = {
                     {
                       __typename: 'PropertyContentItemTexts',
                       contents: [
-                        {
-                          __typename: 'PropertyContentText',
-                          primary: {
-                            __typename: 'LodgingEnrichedMessage',
-                            value: 'This property does not have elevators. ',
-                            accessibilityLabel: null,
-                            icon: null,
-                          },
-                          secondary: null,
-                        },
-                        {
-                          __typename: 'PropertyContentText',
-                          primary: {
-                            __typename: 'LodgingEnrichedMessage',
-                            value:
-                              "Guests can rest easy knowing there's a fire extinguisher and a smoke detector on site. ",
-                            accessibilityLabel: null,
-                            icon: null,
-                          },
-                          secondary: null,
-                        },
                         {
                           __typename: 'PropertyContentText',
                           primary: {
@@ -2589,7 +2834,7 @@ const hotel = {
                         __typename: 'PropertyContentText',
                         primary: {
                           __typename: 'LodgingEnrichedMessage',
-                          value: 'Nerudova 211',
+                          value: 'Hotel CUBE',
                           accessibilityLabel: null,
                           icon: null,
                         },
@@ -2602,7 +2847,7 @@ const hotel = {
                         __typename: 'PropertyContentText',
                         primary: {
                           __typename: 'LodgingEnrichedMessage',
-                          value: 'Hotel Nerudova 211 Hotel',
+                          value: 'Hotel CUBE Prague Hotel',
                           accessibilityLabel: null,
                           icon: null,
                         },
@@ -2615,7 +2860,7 @@ const hotel = {
                         __typename: 'PropertyContentText',
                         primary: {
                           __typename: 'LodgingEnrichedMessage',
-                          value: 'Hotel Nerudova 211 Prague',
+                          value: 'Hotel CUBE Prague Prague',
                           accessibilityLabel: null,
                           icon: null,
                         },
@@ -2628,7 +2873,7 @@ const hotel = {
                         __typename: 'PropertyContentText',
                         primary: {
                           __typename: 'LodgingEnrichedMessage',
-                          value: 'Hotel Nerudova 211 Hotel Prague',
+                          value: 'Hotel CUBE Prague Hotel Prague',
                           accessibilityLabel: null,
                           icon: null,
                         },
@@ -2650,5 +2895,4 @@ const hotel = {
   },
   saveTripItem: null,
 };
-
 export default hotel;

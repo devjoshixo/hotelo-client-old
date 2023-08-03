@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import hoteldata from '../../../api/hotel';
 import classes from './ProductDisplay.module.css';
 import hotelInfoData from '../../../api/hotelInfoData';
 import ProductGallery from './ProductGallery';
 import ProductInfo from './ProductInfo';
+import HotelContext from '../../../context/HotelJsonContext';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
+  const ctx = useContext(HotelContext);
 
   useEffect(() => {
     async function getHotelInfo() {
-      const hotel = await hotelInfoData(hoteldata);
+      const hotel = await hotelInfoData(hoteldata, {
+        price: ctx.hotelData.price,
+        originalPrice: ctx.hotelData.originalPrice,
+      });
       setHotel(hotel);
     }
     getHotelInfo(hotel);

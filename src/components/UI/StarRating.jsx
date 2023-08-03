@@ -1,17 +1,13 @@
 import React from 'react';
-import classes from './StarRating.module.css';
+import RatingCalculator from '../../helper/RatingCalculator';
 
 const StarRating = (props) => {
+  const starfillers = () => {
+    return RatingCalculator(props.rating);
+  };
   return (
-    <div className={`${classes[`rating${props.rating}`]} ${classes.rating}`}>
-      <div>
-        <i className='fa-solid fa-star' />
-        <i className='fa-solid fa-star' />
-        <i className='fa-solid fa-star' />
-        <i className='fa-solid fa-star' />
-        <i className='fa-solid fa-star' />
-      </div>
-      <p>({props.rating})</p>
+    <div>
+      {starfillers()} ({props.rating})
     </div>
   );
 };
