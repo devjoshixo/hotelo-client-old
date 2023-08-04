@@ -66,4 +66,16 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+
+  .info {
+    padding-left: 0;
+  }
+
+  .price {
+    padding-left: 0;
+  }
+
+  .rating p {
+    padding: 0 6px 0 0;
+  }
 }

@@ -5,6 +5,7 @@
   font-weight: 700;
   color: #203e5a;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
@@ -13,6 +14,15 @@
   scale: 1.2;
 }
 
+@media only screen and (max-width: 1200px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  .icon {
+    scale: 0.9;
+    margin: 2.3rem 0.5rem 0 1.2rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .heading {
     -webkit-tap-highlight-color: transparent;

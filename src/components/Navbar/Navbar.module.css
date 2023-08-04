@@ -12,6 +12,13 @@
   /* min-width: 90vw; */
 }
 
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    width: 90%;
+    gap: 2rem;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   /* For tablets: */
   .navbar {

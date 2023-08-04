@@ -5,7 +5,8 @@
   font-weight: 600;
   color: black;
   font-family: 'Montserrat';
-  font-size: 15px;
+  font-size: 14px;
+  white-space: nowrap;
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -24,6 +25,12 @@
   position: relative;
   margin-top: 1.7rem;
   right: 7%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .options {
+    gap: 1rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {

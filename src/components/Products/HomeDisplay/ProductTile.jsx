@@ -41,11 +41,11 @@ const ProductTile = (props) => {
             </p>
           </div>
           <div className={classes.rating}>
+            <p>{hotel.star}</p>
             <i
               className='fa-solid fa-star'
               style={{ color: '#000000', margin: '1.2rem 0.3rem 0 0' }}
             />
-            <p>{hotel.star}</p>
           </div>
         </div>
       </div>

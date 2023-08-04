@@ -13,7 +13,7 @@ import MobileGallery from './MobileGallery';
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
   const ctx = useContext(HotelContext);
-  const isMobile = useMediaQuery({ maxWidth: '500px' });
+  const isMobile = useMediaQuery({ maxWidth: '786px' });
 
   const navigation = useLocation();
   console.log(navigation);
@@ -30,6 +30,7 @@ const ProductDisplay = () => {
   //   }
   //   getHotelInfo(hotel);
   // }, []);
+
   useEffect(() => {
     async function getHotelInfo() {
       const hotel = await hotelInfoData(hoteldata, {

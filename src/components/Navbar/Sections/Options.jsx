@@ -12,12 +12,7 @@ const Options = (props) => {
   };
   return (
     <div className={classes.options}>
-      <div
-        // onMouseEnter={toggleDownButton}
-        // onMouseLeave={toggleDownButton}
-        onClick={toggleDownButton}
-        className={classes.category}
-      >
+      <div onClick={toggleDownButton} className={classes.category}>
         <p>Categories</p>
         {category ? (
           <>

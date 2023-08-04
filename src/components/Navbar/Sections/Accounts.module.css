@@ -18,3 +18,12 @@
   margin-top: 1.6rem;
   right: 7%;
 }
+
+@media only screen and (max-width: 1200px) {
+  .actionable {
+    font-size: 13px;
+  }
+  .sidecontent {
+    font-size: 13px;
+  }
+}
