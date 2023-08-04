@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductTile from './ProductTile';
 import classes from './ProductList.module.css';
+import Sorter from '../../../helper/Sorter';
 
 const ProductList = (props) => {
+  const [sort, setSort] = useState({ byStar: 'htl' });
+  const [hotels, setHotels] = useState(props.hotelList);
+
+  useEffect(() => {
+    const sorting = async () => {
+      const result = await Sorter(hotels, sort);
+      console.log(result);
+      setHotels(result);
+    };
+    sorting();
+  }, []);
+
   return (
     <>
-      <h1 className={classes.header}>Hotels for you!</h1>
       <div className={classes.productlist}>
-        {props.hotelList.map((hotel) => {
-          return <ProductTile hotel={hotel} key={hotel.id} />;
-        })}
+        {hotels &&
+          hotels.map((hotel) => {
+            return <ProductTile hotel={hotel} key={hotel.id} />;
+          })}
       </div>
     </>
   );

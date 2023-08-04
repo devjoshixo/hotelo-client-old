@@ -81,6 +81,18 @@
   border-bottom: 1px solid rgba(112, 112, 112, 0.27);
 }
 
+@media only screen and (max-width: 1000px) {
+  .name {
+    font-size: 1.2rem;
+  }
+  .tagline {
+    font-size: 0.7rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 786px) {
   p {
     padding: 1rem;

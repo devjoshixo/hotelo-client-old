@@ -45,7 +45,19 @@
   transform: scale(1.06);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .mainImage {
+    width: 24rem;
+    height: 22rem;
+    object-fit: contain;
+  }
+  .images img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 786px) {
   .images {
     display: none;
   }

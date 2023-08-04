@@ -9,7 +9,7 @@ import Accounts from './Sections/Accounts';
 import Hamburger from './Hamburger';
 
 const Navbar = () => {
-  const isMobile = useMediaQuery({ maxWidth: '768px' });
+  const isMobile = useMediaQuery({ maxWidth: '786px' });
   return (
     <div className={classes.navbar}>
       <LogoSection />

@@ -1,6 +1,7 @@
 .options {
   display: flex;
   gap: 2.5rem;
+  flex-flow: row nowrap;
   user-select: none;
   font-weight: 600;
   color: black;
@@ -30,6 +31,12 @@
 @media only screen and (max-width: 1200px) {
   .options {
     gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .options {
+    gap: 10px;
   }
 }
 

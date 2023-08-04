@@ -8,7 +8,6 @@ import getHotels from '../../../api/getHotels';
 import hoteldata from '../../../api/hoteldata';
 
 const Products = () => {
-  const [loaded, setLoaded] = useState(false);
   const [hotels, setHotels] = useState(null);
 
   // useEffect(() => {
@@ -18,6 +17,7 @@ const Products = () => {
   //   };
   //   getHomepageHotels();
   // }, []);
+
   useEffect(() => {
     const getHomepageHotels = async () => {
       const result = await data.properties;
@@ -31,15 +31,8 @@ const Products = () => {
   }, []);
   return (
     <>
-      <div
-        className={`${classes.displayImage} ${loaded ? '' : classes.notloaded}`}
-      >
-        <img
-          src={hotelPhoto}
-          onLoad={() => {
-            setLoaded(true);
-          }}
-        />
+      <div className={`${classes.displayImage}`}>
+        <img src={hotelPhoto} />
         <h2 className={classes.offer}>Grab Upto 50% off on selected Hotels</h2>
         <button className={classes.action}>Book Now</button>
       </div>

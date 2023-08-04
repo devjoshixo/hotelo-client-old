@@ -46,7 +46,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
   /* For mobile: */
   .displayImage {
     height: 13rem;
@@ -56,14 +56,14 @@
   }
 
   .offer {
-    font-size: 1rem;
+    font-size: 1.4rem;
     top: 9%;
     left: 4%;
-    width: 50%;
+    width: 54%;
   }
 
   .action {
-    top: 50%;
+    top: 54%;
     left: 3%;
     width: 5.2rem;
     height: 1.5rem;
@@ -73,5 +73,26 @@
   .header {
     font-size: 1.3rem;
     margin: 10px 0 0 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .offer {
+    font-size: 2.5rem;
+  }
+  .action {
+    top: 52%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .offer {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .offer {
+    font-size: 1.2rem;
   }
 }

@@ -6,6 +6,11 @@
   margin: 1rem 3rem 1rem 5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .product {
+    gap: 10rem;
+  }
+}
 @media only screen and (max-width: 786px) {
   .productcard {
     display: flex;
