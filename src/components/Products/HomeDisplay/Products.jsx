@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 // import hotelPhoto from '../assets/marten-bjork-n_IKQDCyrG0-unsplash.jpg';
 import hotelPhoto from '../../../assets/display.jpg';
+import hoteldata from '../../../api/hoteldata';
 import classes from './Products.module.css';
-import data from '../../../api/data';
 import ProductList from './ProductList';
 import getHotels from '../../../api/getHotels';
-import hoteldata from '../../../api/hoteldata';
 import Loader from '../../UI/Loader';
 
 const Products = () => {

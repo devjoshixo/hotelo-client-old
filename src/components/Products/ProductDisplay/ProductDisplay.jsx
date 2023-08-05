@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import hoteldata from '../../../api/hotel';
 import classes from './ProductDisplay.module.css';
-import hotelInfoData from '../../../api/hotelInfoData';
 import ProductGallery from './ProductGallery';
+import hotelInfoData from '../../../api/hotelInfoData';
 import ProductInfo from './ProductInfo';
 import getHotelDetails from '../../../api/getHotelDetails';
 import { useMediaQuery } from 'react-responsive';
