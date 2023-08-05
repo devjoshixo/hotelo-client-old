@@ -17,30 +17,30 @@ const ProductDisplay = () => {
   const location = useLocation();
   const search = new URLSearchParams(location.search);
 
-  // useEffect(() => {
-  //   async function getHotelInfo() {
-  //     const hotels = await getHotelDetails(search.get('id'));
-  //     const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
-  //     const hotel = await hotelInfoData(hotels, {
-  //       price: hotelData.price,
-  //       originalPrice: hotelData.originalPrice,
-  //     });
-  //     setHotel(hotel);
-  //   }
-  //   getHotelInfo();
-  // }, []);
-
   useEffect(() => {
     async function getHotelInfo() {
+      const hotels = await getHotelDetails(search.get('id'));
       const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
-      const hotel = await hotelInfoData(hoteldata, {
+      const hotel = await hotelInfoData(hotels, {
         price: hotelData.price,
         originalPrice: hotelData.originalPrice,
       });
       setHotel(hotel);
     }
-    getHotelInfo(hotel);
+    getHotelInfo();
   }, []);
+
+  // useEffect(() => {
+  //   async function getHotelInfo() {
+  //     const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
+  //     const hotel = await hotelInfoData(hoteldata, {
+  //       price: hotelData.price,
+  //       originalPrice: hotelData.originalPrice,
+  //     });
+  //     setHotel(hotel);
+  //   }
+  //   getHotelInfo(hotel);
+  // }, []);
 
   return (
     <>

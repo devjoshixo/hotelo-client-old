@@ -27,15 +27,6 @@ const ProductList = (props) => {
     setHotels(result);
   }, [setHotels, sort]);
 
-  // useEffect(() => {
-  //   const sorting = () => {
-  //     const result = Sorter(hotels, sort);
-  //     console.log(result);
-  //     setHotels(result);
-  //   };
-  //   sorting();
-  // }, []);
-
   return (
     <>
       <div className={classes.selectors}>

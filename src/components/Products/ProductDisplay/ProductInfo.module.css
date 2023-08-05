@@ -78,7 +78,7 @@
   padding: 1rem 0 2rem 0rem;
   margin: 3rem 0 2rem 0;
   border-top: 1px solid rgba(112, 112, 112, 0.27);
-  border-bottom: 1px solid rgba(112, 112, 112, 0.27);
+  /* border-bottom: 1px solid rgba(112, 112, 112, 0.27); */
 }
 
 @media only screen and (max-width: 1000px) {
