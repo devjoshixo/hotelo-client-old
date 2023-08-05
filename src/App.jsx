@@ -4,6 +4,7 @@ import './App.css';
 import Homepage from './Pages/Homepage';
 import Navbar from './components/Navbar/Navbar';
 import ProductPage from './Pages/ProductPage';
+import Footer from './components/UI/Footer';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
           <ProductPage />
         </Route>
       </Switch>
+      <Footer />
     </>
   );
 }

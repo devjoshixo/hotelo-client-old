@@ -8,6 +8,7 @@ import getHotelDetails from '../../../api/getHotelDetails';
 import { useMediaQuery } from 'react-responsive';
 import MobileGallery from './MobileGallery';
 import { useLocation } from 'react-router-dom';
+import Loader from '../../UI/Loader';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
@@ -43,6 +44,7 @@ const ProductDisplay = () => {
 
   return (
     <>
+      {!hotel && <Loader />}
       {hotel && (
         <div className={classes.productcard}>
           {isMobile ? (

@@ -130,6 +130,7 @@
   position: absolute;
   left: 4%;
   width: 100%;
+  justify-content: center;
   height: 4rem;
   background-color: white;
 }
@@ -139,22 +140,23 @@
   left: 3%;
   margin-top: 1rem;
   color: gray;
+  scale: 1.5;
   /* background-color: black; */
 }
 
 .searchbar {
   position: absolute;
   display: flex;
-  max-width: 60%;
+  min-width: 80%;
   background-color: white;
-  left: 9%;
+  left: 14%;
 }
 
 .searchbar input {
   border: 1px solid rgba(32, 32, 32, 0.055);
   background-color: #f6f7f8;
   color: black;
-  width: 100%;
+  width: 60%;
   font-family: 'Montserrat';
   height: 2.5rem;
   padding-left: 15px;
