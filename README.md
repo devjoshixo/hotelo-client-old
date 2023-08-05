@@ -1,15 +1,21 @@
-# React + Vite
+## React + Vite
 
 for running on your local machine
 
-git clone the repository and then 'npm install' to install the dependencies
-run the app on your local server with 'npm run dev'
+ git clone the repository and then
+ ```
+ npm install 
+ ```
+to install the dependencies
+run the app on your local server with 
+```
+npm run dev
+```
 
 
 
 
-
-
+## Details of the App
 
 
 This project is a frontend website made with the use of React. API from "Hotels.com" is taken for the website "Hotelo". The homepage displays navigation bars, footer hotel cards fetched from different default parameters. Each hotel card component has individual properties that is fetched from the API. Entire website adheres to the Montserrat font and follows the colour pallete of Midnight blue.
