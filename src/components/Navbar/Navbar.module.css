@@ -30,6 +30,6 @@
   /* For mobile: */
   .navbar {
     height: 4.5rem;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }

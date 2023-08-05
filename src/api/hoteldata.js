@@ -4,7 +4,7 @@ const hoteldata = (hotel) => {
     url: hotel.propertyImage.image.url,
     distnationValue: hotel.destinationInfo.distanceFromDestination.value,
     destinationUnit: hotel.destinationInfo.distanceFromDestination.unit,
-    priceInt: hotel.price.lead.formatted,
+    amount: hotel.price.lead.amount,
     price: hotel.price.lead.formatted,
     originalPrice: hotel.price.strikeOut
       ? hotel.price.strikeOut.formatted

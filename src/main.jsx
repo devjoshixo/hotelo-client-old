@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import HotelJsonState from './context/HotelJsonState.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HotelJsonState>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </HotelJsonState>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

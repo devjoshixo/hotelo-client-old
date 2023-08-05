@@ -10,5 +10,51 @@
   justify-content: center;
   flex-flow: row wrap;
   gap: 2rem;
-  /* margin: 1rem 4rem 3rem 4rem; */
+  margin: 3rem 4rem 3rem 4rem;
+}
+
+.selectors {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 73%;
+  margin: 4rem auto 0 auto;
+}
+
+.selectors select {
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  width: min-content;
+  background-color: #eaecec;
+  color: #203e5a;
+  padding: 0 1rem;
+  border: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+  .selectors {
+    justify-content: center;
+    padding-right: 4rem;
+  }
+  .selectors select {
+    width: 6rem;
+    font-size: 0.9rem;
+    width: min-content;
+    padding: 0 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .selectors {
+    justify-content: center;
+  }
+  .selectors select {
+    width: 6rem;
+    font-size: 0.9rem;
+    width: max-content;
+    padding: 0 0.2rem;
+  }
 }

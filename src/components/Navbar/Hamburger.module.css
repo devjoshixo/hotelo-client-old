@@ -125,3 +125,49 @@
   z-index: 1;
   /* background-color: rgba(0, 0, 0, 0.267); */
 }
+
+.searchdiv {
+  position: absolute;
+  left: 4%;
+  width: 60%;
+  height: 4rem;
+  background-color: white;
+}
+
+.arrow {
+  position: absolute;
+  top: 4.3%;
+  left: 3%;
+  color: gray;
+  /* background-color: black; */
+}
+
+.searchbar {
+  position: absolute;
+  display: flex;
+  /* max-width: 40rem; */
+  background-color: white;
+  left: 9%;
+}
+
+.searchbar input {
+  border: 1px solid rgba(32, 32, 32, 0.055);
+  background-color: #f6f7f8;
+  color: black;
+  width: 100%;
+  font-family: 'Montserrat';
+  height: 2.5rem;
+  padding-left: 15px;
+  border-radius: 20px;
+}
+
+.searchbar i {
+  position: relative;
+  color: rgba(0, 0, 0, 0.56);
+  right: 12%;
+  margin-top: 0.8rem;
+}
+
+.searchbar input:focus {
+  outline: none;
+}

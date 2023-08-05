@@ -6,29 +6,24 @@ import data from '../../../api/data';
 import ProductList from './ProductList';
 import getHotels from '../../../api/getHotels';
 import hoteldata from '../../../api/hoteldata';
+import Loader from '../../UI/Loader';
 
 const Products = () => {
   const [hotels, setHotels] = useState(null);
-
-  // useEffect(() => {
-  //   const getHomepageHotels = async () => {
-  //     const result = await getHotels();
-  //     setHotels(result);
-  //   };
-  //   getHomepageHotels();
-  // }, []);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const getHomepageHotels = async () => {
       const result = await data.properties;
+      // const result = await getHotels();
       const converted = result.map((item) => {
         return hoteldata(item);
       });
       setHotels(converted);
-      console.log('use');
     };
     getHomepageHotels();
   }, []);
+
   return (
     <>
       <div className={`${classes.displayImage}`}>
@@ -36,6 +31,8 @@ const Products = () => {
         <h2 className={classes.offer}>Grab Upto 50% off on selected Hotels</h2>
         <button className={classes.action}>Book Now</button>
       </div>
+      {/* <Loader /> */}
+      {!hotels && <Loader />}
       {hotels && <ProductList hotelList={hotels} />}
     </>
   );

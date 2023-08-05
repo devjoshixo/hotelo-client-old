@@ -1,27 +1,25 @@
 const Sorter = (hotelData, sort) => {
-  let hotel = hotelData;
+  let hotel = [...hotelData];
   if (sort.byStar) {
-    if (sort.byStar === 'lth') {
-      console.log('high');
+    if (sort.byStar === 'htl') {
       hotel.sort(function (a, b) {
         return b.star - a.star;
       });
-    } else if (sort.byStar === 'htl') {
+    } else if (sort.byStar === 'lth') {
       hotel.sort(function (a, b) {
         return a.star - b.star;
       });
     }
-  } else if (sort.byPrice) {
-    if (sort.byPrice) {
-      if (sort.byPrice == 'lth') {
-        hotel.sort(function (a, b) {
-          return b.price - a.price;
-        });
-      } else if (sort.byPrice == 'htl') {
-        hotel.sort(function (a, b) {
-          return a.price - b.price;
-        });
-      }
+  }
+  if (sort.byPrice) {
+    if (sort.byPrice === 'htl') {
+      hotel.sort(function (a, b) {
+        return parseInt(b.amount) - parseInt(a.amount);
+      });
+    } else if (sort.byPrice === 'lth') {
+      hotel.sort(function (a, b) {
+        return parseInt(a.amount) - parseInt(b.amount);
+      });
     }
   }
   return hotel;

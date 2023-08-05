@@ -2,18 +2,15 @@ import React, { useContext } from 'react';
 import classes from './ProductTile.module.css';
 import { useHistory } from 'react-router-dom';
 import hoteldata from '../../../api/hoteldata';
-import HotelContext from '../../../context/HotelJsonContext';
 
 const ProductTile = (props) => {
   const hotel = props.hotel;
   const name = hotel.name.split(' ');
-  const ctx = useContext(HotelContext);
   const navigation = useHistory();
 
   const clickHandler = (event) => {
-    console.log(event.target.name);
-    ctx.setHotelData(hotel);
-    navigation.push('/hotel/details?id=' + hotel.id);
+    localStorage.setItem('hotelData', JSON.stringify(hotel));
+    navigation.push(`/hotel/details?id=${hotel.id}`);
   };
 
   return (

@@ -4,38 +4,37 @@ import classes from './ProductDisplay.module.css';
 import hotelInfoData from '../../../api/hotelInfoData';
 import ProductGallery from './ProductGallery';
 import ProductInfo from './ProductInfo';
-import HotelContext from '../../../context/HotelJsonContext';
-import { useLocation } from 'react-router-dom';
 import getHotelDetails from '../../../api/getHotelDetails';
 import { useMediaQuery } from 'react-responsive';
 import MobileGallery from './MobileGallery';
+import { useLocation } from 'react-router-dom';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
-  const ctx = useContext(HotelContext);
   const isMobile = useMediaQuery({ maxWidth: '786px' });
 
-  const navigation = useLocation();
-  console.log(navigation);
+  const location = useLocation();
+  const search = new URLSearchParams(location.search);
 
   // useEffect(() => {
   //   async function getHotelInfo() {
-  //     const data = await getHotelDetails(ctx.hotelData.id);
-  //     console.log(data);
-  //     const hotel = await hotelInfoData(data, {
-  //       price: ctx.hotelData.price,
-  //       originalPrice: ctx.hotelData.originalPrice,
+  //     const hotels = await getHotelDetails(search.get('id'));
+  //     const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
+  //     const hotel = await hotelInfoData(hotels, {
+  //       price: hotelData.price,
+  //       originalPrice: hotelData.originalPrice,
   //     });
   //     setHotel(hotel);
   //   }
-  //   getHotelInfo(hotel);
+  //   getHotelInfo();
   // }, []);
 
   useEffect(() => {
     async function getHotelInfo() {
+      const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
       const hotel = await hotelInfoData(hoteldata, {
-        price: ctx.hotelData.price,
-        originalPrice: ctx.hotelData.originalPrice,
+        price: hotelData.price,
+        originalPrice: hotelData.originalPrice,
       });
       setHotel(hotel);
     }
