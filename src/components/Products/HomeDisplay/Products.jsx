@@ -31,7 +31,6 @@ const Products = () => {
         <h2 className={classes.offer}>Grab Upto 50% off on selected Hotels</h2>
         <button className={classes.action}>Book Now</button>
       </div>
-      {/* <Loader /> */}
       {!hotels && <Loader />}
       {hotels && <ProductList hotelList={hotels} />}
     </>
