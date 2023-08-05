@@ -8,6 +8,10 @@ run the app on your local server with 'npm run dev'
 
 
 
+
+
+
+
 This project is a frontend website made with the use of React. API from "Hotels.com" is taken for the website "Hotelo". The homepage displays navigation bars, footer hotel cards fetched from different default parameters. Each hotel card component has individual properties that is fetched from the API. Entire website adheres to the Montserrat font and follows the colour pallete of Midnight blue.
 
 Two filters on the basis of price range and hotel stars, whose working is functional one at a time is displayed on the Homepage. Both the filters giving the leverage to arrange the hotel cards in descending(high to low) and ascending(low to high) order. When the page is rendered, a loader appears, which stays till the data is fetched and displayed.
