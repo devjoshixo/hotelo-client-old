@@ -6,6 +6,7 @@
   color: white;
   font-family: 'Montserrat';
   gap: 8rem;
+  cursor: pointer;
   max-width: 100vw;
   min-height: 20rem;
   background-color: #0e2131;
