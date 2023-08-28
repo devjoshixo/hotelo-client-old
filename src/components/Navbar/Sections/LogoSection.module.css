@@ -8,10 +8,16 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.com {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 3.4rem;
+}
+
 .icon {
-  margin: 2.9rem 1rem 0 0;
+  margin: 2.1rem 1rem 0 0;
   color: #2f5b85;
-  scale: 1.2;
+  scale: 1;
 }
 
 @media only screen and (max-width: 1200px) {

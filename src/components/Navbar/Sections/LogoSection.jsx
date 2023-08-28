@@ -12,6 +12,7 @@ const LogoSection = () => {
     <div className={classes.heading} onClick={redirectHome}>
       <i className={`fa-solid fa-hotel ` + classes.icon}></i>
       <h1 className={classes.heading}>Hotelo</h1>
+      <p className={classes.com}>.com</p>
     </div>
   );
 };

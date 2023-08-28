@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import classes from './ProductTile.module.css';
 import { useHistory } from 'react-router-dom';
-import hoteldata from '../../../api/hoteldata';
+import hoteldata from '../../../helper/hoteldata';
+import Heart from '../../UI/heart';
 
 const ProductTile = (props) => {
   const hotel = props.hotel;
@@ -15,11 +16,12 @@ const ProductTile = (props) => {
 
   return (
     <>
-      <div className={classes.productcard} onClick={clickHandler}>
+      <div className={classes.productcard}>
         <div className={classes.imagecard}>
-          <img src={hotel.url} />
+          <img src={hotel.url} onClick={clickHandler} />
+          <Heart />
         </div>
-        <div className={classes.infocard}>
+        <div className={classes.infocard} onClick={clickHandler}>
           <div>
             <h3 className={classes.name}>{name[0] + ' ' + name[1]}</h3>
             <p className={classes.info}>

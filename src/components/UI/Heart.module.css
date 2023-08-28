@@ -1,0 +1,18 @@
+.container {
+  display: absolute;
+  margin: -19.5rem 0 0 17rem;
+  width: 40rem;
+}
+
+.icon {
+  background-color: white;
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 4px 0 0 4px;
+  border-radius: 50%;
+  scale: 1.7;
+}
+
+.icon:hover {
+  color: red;
+}

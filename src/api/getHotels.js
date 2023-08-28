@@ -12,6 +12,7 @@ const getHotels = async () => {
   };
 
   try {
+    console.log('Fetching');
     const response = await fetch(url, options);
     const properties = await response.json();
     const result = await properties.properties;

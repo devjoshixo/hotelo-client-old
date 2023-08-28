@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import classes from './ProductGallery.module.css';
+import uniqid from 'uniqid';
 
 const ProductGallery = (props) => {
   const hotel = props.hotel;
   const [ImageSelected, setImageSelected] = useState(0);
   let counter = 0;
+
+  // const imageModalOpener = () => {
+
+  // }
 
   const handlePhotoChanger = (event) => {
     if (event.target.name == ImageSelected) {
@@ -15,14 +20,10 @@ const ProductGallery = (props) => {
   };
   return (
     <div className={classes.Gallery}>
-      <img
-        src={hotel.images[ImageSelected].image.url}
-        className={classes.mainImage}
-      />
       <div className={classes.images}>
         {hotel.images.map((item) => {
           return (
-            <div className={classes.imagetile}>
+            <div className={classes.imagetile} key={uniqid()}>
               <img
                 src={item.image.url}
                 name={counter++}
@@ -33,6 +34,11 @@ const ProductGallery = (props) => {
           );
         })}
       </div>
+      <img
+        src={hotel.images[ImageSelected].image.url}
+        className={classes.mainImage}
+        // onClick={imageModalOpener}
+      />
     </div>
   );
 };

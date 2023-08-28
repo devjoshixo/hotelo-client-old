@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classes from './ProductInfo.module.css';
 import StarRating from '../../UI/StarRating';
 import NativeDatePicker from 'native-datepicker/src/react';
+import uniqid from 'uniqid';
 
 const ProductInfo = (props) => {
   const hotel = props.hotel;
@@ -59,21 +60,21 @@ const ProductInfo = (props) => {
           <li>Facilities</li>
         </h2>
         {hotel.Amenities.map((item) => {
-          return <li>{item.text}</li>;
+          return <li key={uniqid()}>{item.text}</li>;
         })}
       </div>
 
       <div>
         <h2>Need to Know</h2>
         {hotel.needToKnow.map((item) => {
-          return <p>{item}</p>;
+          return <p key={uniqid()}>{item}</p>;
         })}
       </div>
 
       <div className={classes.checkin}>
         <h2>Check in Instructions</h2>
         {hotel.checkinInstructions.map((item) => {
-          return <p>{item}</p>;
+          return <p key={uniqid()}>{item}</p>;
         })}
       </div>
     </div>
