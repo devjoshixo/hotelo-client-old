@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import classes from './ProductTile.module.css';
 import { useHistory } from 'react-router-dom';
 import hoteldata from '../../../helper/hoteldata';
-import Heart from '../../UI/heart';
+import Heart from '../../UI/Heart';
 
 const ProductTile = (props) => {
   const hotel = props.hotel;
