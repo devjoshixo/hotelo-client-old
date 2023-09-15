@@ -3,9 +3,9 @@ const getHotels = async () => {
     method: 'GET',
     redirect: 'follow',
   };
-
+  // import.meta.env.VITE_REACT_APP_API_URL + '/api/hotels/getHomePage'
   const data = await fetch(
-    import.meta.env.VITE_REACT_APP_API_URL + '/api/hotels/getHomePage',
+    'https://hotelo-server-production.up.railway.app/api/hotels/getHomePage',
     requestOptions
   );
   const result = await data.json();
