@@ -14,7 +14,7 @@ const checkEmail = async (email) => {
   };
 
   const data = await fetch(
-    'http://localhost:5000/api/user/checkEmail',
+    process.env.VITE_REACT_APP_API_URL + '/api/user/checkEmail',
     requestOptions
   );
 

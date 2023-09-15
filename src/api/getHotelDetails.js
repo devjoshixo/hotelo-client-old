@@ -5,7 +5,7 @@ const getHotelDetails = async () => {
   };
 
   const data = await fetch(
-    'http://localhost:5000/api/hotels/getHotelDetails',
+    import.meta.env.VITE_REACT_APP_API_URL + '/api/hotels/getHotelDetails',
     requestOptions
   );
   const result = await data.json();

@@ -12,7 +12,7 @@ const signupUser = async (user) => {
   };
 
   const response = await fetch(
-    'http://localhost:5000/api/user/signup',
+    import.meta.env.VITE_REACT_APP_API_URL + '/api/user/signup',
     requestOptions
   );
   return response;
