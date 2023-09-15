@@ -22,7 +22,7 @@ const Accounts = () => {
         <i className='fa-regular fa-user fa-lg'></i>
         <p>Account</p>
 
-        {ctx.login ? (
+        {ctx.login.loggedin ? (
           <div className={`${classes.loggedin} ${modal ? '' : classes.hidden}`}>
             You are logged in
           </div>
