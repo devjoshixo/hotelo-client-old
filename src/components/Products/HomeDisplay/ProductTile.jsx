@@ -25,7 +25,7 @@ const ProductTile = (props) => {
           <div>
             <h3 className={classes.name}>{name[0] + ' ' + name[1]}</h3>
             <p className={classes.info}>
-              {hotel.distnationValue + ' ' + hotel.destinationUnit}
+              {hotel.destinationValue + ' ' + hotel.destinationUnit}
               away
             </p>
             <p className={classes.price}>

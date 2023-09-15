@@ -2,7 +2,7 @@ const hoteldata = (hotel) => {
   const data = {
     name: hotel.name,
     url: hotel.propertyImage.image.url,
-    distnationValue: hotel.destinationInfo.distanceFromDestination.value,
+    destnationValue: hotel.destinationInfo.distanceFromDestination.value,
     destinationUnit: hotel.destinationInfo.distanceFromDestination.unit,
     amount: hotel.price.lead.amount,
     price: hotel.price.lead.formatted,

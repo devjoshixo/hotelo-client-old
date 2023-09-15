@@ -11,7 +11,10 @@ const Heart = () => {
       }}
     >
       {liked ? (
-        <i className={`fa-solid fa-heart ${classes.icon}`}></i>
+        <i
+          className={`fa-solid fa-heart ${classes.icon}`}
+          style={{ color: 'red' }}
+        ></i>
       ) : (
         <i className={`fa-regular fa-heart ${classes.icon}`}></i>
       )}

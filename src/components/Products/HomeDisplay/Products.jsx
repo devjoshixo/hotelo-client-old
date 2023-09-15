@@ -5,7 +5,6 @@ import classes from './Products.module.css';
 import ProductList from './ProductList';
 import getHotels from '../../../api/getHotels';
 import Loader from '../../UI/Loader';
-import hotelData from '../../../api/seedHotels';
 
 const Products = () => {
   const [hotels, setHotels] = useState(null);
@@ -13,15 +12,9 @@ const Products = () => {
 
   useEffect(() => {
     const getHomepageHotels = async () => {
-      //Local Seeded Data Fetch
-      const result = await hotelData;
-
-      //Hotels.com API fetch
-      // const result = await getHotels();
-      const converted = result.map((item) => {
-        return hoteldata(item);
-      });
-      setHotels(converted);
+      const result = await getHotels();
+      console.log(result);
+      setHotels(result);
     };
     getHomepageHotels();
   }, []);

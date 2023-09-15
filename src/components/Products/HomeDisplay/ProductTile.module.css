@@ -9,6 +9,7 @@
 .imagecard {
   position: relative;
   width: 20rem;
+  overflow: hidden;
   height: 20rem;
 }
 

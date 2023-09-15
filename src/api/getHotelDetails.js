@@ -1,23 +1,15 @@
-const getHotelDetails = async (id) => {
-  const url = `${
-    import.meta.env.VITE_REACT_APP_API_URL
-  }details?hotel_id=${id}&locale=en_US&domain=US`;
-  const options = {
+const getHotelDetails = async () => {
+  var requestOptions = {
     method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': import.meta.env.VITE_REACT_APP_API_KEY,
-      'X-RapidAPI-Host': import.meta.env.VITE_REACT_APP_API_HOST,
-    },
+    redirect: 'follow',
   };
 
-  try {
-    console.log('Fetching');
-    const response = await fetch(url, options);
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    console.error(error);
-  }
+  const data = await fetch(
+    'http://localhost:5000/api/hotels/getHotelDetails',
+    requestOptions
+  );
+  const result = await data.json();
+  return result;
 };
 
 export default getHotelDetails;

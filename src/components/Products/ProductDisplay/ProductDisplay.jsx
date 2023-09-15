@@ -8,7 +8,6 @@ import { useMediaQuery } from 'react-responsive';
 import MobileGallery from './MobileGallery';
 import { useLocation } from 'react-router-dom';
 import Loader from '../../UI/Loader';
-import hotelInfo from '../../../api/seedHotelData';
 
 const ProductDisplay = () => {
   const [hotel, setHotel] = useState(null);
@@ -19,17 +18,8 @@ const ProductDisplay = () => {
 
   useEffect(() => {
     async function getHotelInfo() {
-      //Local Seeded hotel data
-      const hotels = await hotelInfo;
-      //Hotels.com Api to fetch hotel details
-      // const hotels = await getHotelDetails(search.get('id'));
-
-      const hotelData = await JSON.parse(localStorage.getItem('hotelData'));
-      const hotel = await hotelInfoData(hotels, {
-        price: hotelData.price,
-        originalPrice: hotelData.originalPrice,
-      });
-      setHotel(hotel);
+      const hotels = await getHotelDetails();
+      setHotel(hotels);
     }
     getHotelInfo();
   }, []);
