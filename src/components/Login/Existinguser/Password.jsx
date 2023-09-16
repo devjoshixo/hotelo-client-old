@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import classes from './Password.module.css';
-import AuthContext from '../../context/AuthContext';
-import useLogin from '../../hooks/UseLogin';
+import AuthContext from '../../../context/AuthContext';
+import useLogin from '../../../hooks/UseLogin';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 
 const Password = (props) => {

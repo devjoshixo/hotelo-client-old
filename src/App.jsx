@@ -11,7 +11,6 @@ function App() {
   const [navBar, setNavBar] = useState(true);
   const { pathname } = useLocation();
   useEffect(() => {
-    console.log(pathname);
     if (pathname === '/account/login') {
       setNavBar(false);
     } else {
@@ -29,7 +28,7 @@ function App() {
         <Route path='/hotel/details'>
           <ProductPage />
         </Route>
-        <Route path='/account/login' exact>
+        <Route path='/account/login'>
           <LoginPage />
         </Route>
       </Switch>

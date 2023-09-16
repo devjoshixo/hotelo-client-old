@@ -2,18 +2,25 @@ import React, { useContext, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import classes from './Accounts.module.css';
 import AuthContext from '../../../context/AuthContext';
+import UseLogout from '../../../hooks/UseLogout';
 
 const Accounts = () => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
   const navigation = useHistory();
   const ctx = useContext(AuthContext);
-  const handleAccount = () => {};
+  const { logout } = UseLogout();
+  const logOutHandler = (event) => {
+    event.preventDefault();
+    window.location.reload();
+    logout();
+  };
+
   return (
     <div className={classes.actionable}>
       <div
         className={`${classes.sidecontent} ${classes.account}`}
         onMouseLeave={() => {
-          setModal(false);
+          setModal(true);
         }}
         onMouseEnter={() => {
           setModal(true);
@@ -22,9 +29,12 @@ const Accounts = () => {
         <i className='fa-regular fa-user fa-lg'></i>
         <p>Account</p>
 
-        {ctx.login.loggedin ? (
+        {ctx.login.loggedIn ? (
           <div className={`${classes.loggedin} ${modal ? '' : classes.hidden}`}>
-            You are logged in
+            Hi,
+            <button className={classes.logout} onClick={logOutHandler}>
+              Logout
+            </button>
           </div>
         ) : (
           <div
@@ -35,11 +45,7 @@ const Accounts = () => {
               in
             </h2>
             <Link to='/account/login'>
-              <button
-                className={classes.signInAction}
-                href={'/account/signin'}
-                onClick={handleAccount}
-              >
+              <button className={classes.signInAction} href={'/account/signin'}>
                 Sign in
               </button>
             </Link>

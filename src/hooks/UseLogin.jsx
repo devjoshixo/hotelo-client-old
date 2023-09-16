@@ -14,7 +14,8 @@ const useLogin = () => {
     let response, json;
 
     if (ctx.userExists) {
-      response = await loginUser(user);
+      const data = { email: user.email, password: user.password };
+      response = await loginUser(data);
       json = await response.json();
     } else {
       response = await signupUser(user);
