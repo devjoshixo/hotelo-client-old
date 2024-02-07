@@ -5,7 +5,7 @@ import AuthContext from '../../../context/AuthContext';
 import UseLogout from '../../../hooks/UseLogout';
 
 const Accounts = () => {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const navigation = useHistory();
   const ctx = useContext(AuthContext);
   const { logout } = UseLogout();
@@ -20,7 +20,7 @@ const Accounts = () => {
       <div
         className={`${classes.sidecontent} ${classes.account}`}
         onMouseLeave={() => {
-          setModal(true);
+          setModal(false);
         }}
         onMouseEnter={() => {
           setModal(true);

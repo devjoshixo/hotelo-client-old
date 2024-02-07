@@ -13,7 +13,6 @@ const Products = () => {
   useEffect(() => {
     const getHomepageHotels = async () => {
       const result = await getHotels();
-      console.log(result);
       setHotels(result);
     };
     getHomepageHotels();
