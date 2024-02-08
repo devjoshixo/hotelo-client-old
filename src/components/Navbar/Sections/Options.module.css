@@ -1,0 +1,60 @@
+.options {
+  display: flex;
+  gap: 2.5rem;
+  flex-flow: row nowrap;
+  user-select: none;
+  font-weight: light;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.options p:hover {
+  color: rgb(78, 78, 78);
+}
+
+.category {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.caret {
+  position: relative;
+  margin-top: 1.6rem;
+  right: 7%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .options {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .options {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .options {
+    flex-flow: column nowrap;
+    gap: 0;
+    margin-left: 1rem;
+  }
+
+  .caret {
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .caret {
+    margin-left: 0.1rem;
+  }
+}
