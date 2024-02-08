@@ -18,7 +18,7 @@ const Navbar = () => {
       ) : (
         <>
           <Options />
-          <SearchBar />
+          {/* <SearchBar /> */}
           <Accounts />
         </>
       )}
